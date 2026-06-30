@@ -1,1 +1,64 @@
-Você é um gerente sênior de desenvolvimento de software responsável por formar equipes para projetos de software. Estou fornecendo três arquivos anexados: base_final.json: base anonimizada de desenvolvedores. Cada desenvolvedor possui identificador, papel contratual, histórico de projetos e competências em domínio, ecossistema e linguagens. Graph_DB_real.json: grafo de colaboração/compatibilidade entre desenvolvedores. As arestas indicam histórico de colaboração entre pares. target_projects.json: lista de projetos-alvo. Cada projeto contém descrição, tamanho da equipe e requisitos classificados em MUST, SHOULD e COULD para domínio, ecossistema e linguagens. Sua tarefa é recomendar uma equipe para cada projeto-alvo. Instruções importantes: Selecione exatamente a quantidade de desenvolvedores definida em team_size para cada projeto. Use apenas desenvolvedores existentes em base_final.json. Use os identificadores anonimizados dos desenvolvedores. Não use nomes reais nem e-mails. Priorize primeiro a cobertura dos requisitos MUST. Depois priorize os requisitos SHOULD. Depois considere os requisitos COULD. Considere também o histórico de colaboração/compatibilidade do grafo. Prefira equipes cujos membros tenham maior evidência de colaboração anterior, quando isso não prejudicar os requisitos técnicos principais. Evite escolher quatro desenvolvedores muito redundantes se isso reduzir a cobertura geral dos requisitos. Não use fórmulas matemáticas externas. Não tente reproduzir algoritmo genético, ILP ou função fitness. Aja como um gestor avaliando perfis e histórico de colaboração em linguagem natural. Caso nenhum conjunto cubra perfeitamente todos os MUST, escolha a equipe que melhor equilibra cobertura MUST, colaboração e cobertura complementar. Para cada projeto, retorne: O ID do projeto. O nome do projeto. A equipe recomendada, com exatamente team_size desenvolvedores. Uma justificativa curta explicando: quais requisitos MUST foram cobertos; quais requisitos SHOULD/COULD foram considerados; por que a equipe parece adequada; se houver possível fragilidade, indique a fragilidade. Retorne a resposta final exclusivamente em JSON válido, sem comentários fora do JSON, seguindo este formato: { "model_reasoning_summary": "Resumo curto da estratégia usada para formar as equipes.", "recommendations": [ { "project_id": "P1", "project_name": "...", "team_size": 4, "recommended_team": [ { "developer_id": "Dev_X", "reason": "Justificativa curta para este desenvolvedor." }, { "developer_id": "Dev_Y", "reason": "Justificativa curta para este desenvolvedor." }, { "developer_id": "Dev_Z", "reason": "Justificativa curta para este desenvolvedor." }, { "developer_id": "Dev_W", "reason": "Justificativa curta para este desenvolvedor." } ], "must_coverage_summary": "Resumo da cobertura dos requisitos MUST.", "should_could_summary": "Resumo da cobertura dos requisitos SHOULD e COULD.", "collaboration_summary": "Resumo da evidência de colaboração entre os membros, com base no grafo.", "main_limitation": "Principal limitação percebida da equipe, se houver." } ] } Atenção: gere recomendações para todos os projetos presentes em target_projects.json.
+You are a senior software development manager responsible for forming teams for software projects. I am providing three attached files:
+
+*base_final.json*: anonymized database of developers. Each developer has an identifier, contractual role, project history, and competencies in domain, ecosystem, and languages.
+
+*Graph_DB_real.json*: collaboration/compatibility graph between developers. The edges indicate collaboration history between pairs.
+
+*target_projects.json*: list of target projects. Each project contains a description, team size, and requirements classified as MUST, SHOULD, and COULD for domain, ecosystem, and languages.
+
+Your task is to recommend a team for each target project.
+
+*Important instructions:*
+- Select exactly the number of developers defined in team_size for each project.
+- Use only developers that exist in base_final.json.
+- Use the anonymized developer identifiers. Do not use real names or emails.
+- Prioritize coverage of the MUST requirements first. Then prioritize the SHOULD requirements. Then consider the COULD requirements.
+- Also take into account the collaboration/compatibility history from the graph. Prefer teams whose members have stronger evidence of prior collaboration, when this does not harm the main technical requirements.
+- Avoid choosing four highly redundant developers if this reduces the overall coverage of the requirements.
+- Do not use external mathematical formulas. Do not attempt to reproduce a genetic algorithm, ILP, or fitness function. Act as a manager evaluating profiles and collaboration history in natural language.
+- If no set perfectly covers all the MUST requirements, choose the team that best balances MUST coverage, collaboration, and complementary coverage.
+
+For each project, return:
+- The project ID.
+- The project name.
+- The recommended team, with exactly team_size developers.
+- A short justification explaining: which MUST requirements were covered; which SHOULD/COULD requirements were considered; why the team seems suitable; and if there is any possible weakness, indicate the weakness.
+
+Return the final response exclusively in valid JSON, with no comments outside the JSON, following this format:
+
+json
+{
+  "model_reasoning_summary": "Short summary of the strategy used to form the teams.",
+  "recommendations": [
+    {
+      "project_id": "P1",
+      "project_name": "...",
+      "team_size": 4,
+      "recommended_team": [
+        {
+          "developer_id": "Dev_X",
+          "reason": "Short justification for this developer."
+        },
+        {
+          "developer_id": "Dev_Y",
+          "reason": "Short justification for this developer."
+        },
+        {
+          "developer_id": "Dev_Z",
+          "reason": "Short justification for this developer."
+        },
+        {
+          "developer_id": "Dev_W",
+          "reason": "Short justification for this developer."
+        }
+      ],
+      "must_coverage_summary": "Summary of the coverage of the MUST requirements.",
+      "should_could_summary": "Summary of the coverage of the SHOULD and COULD requirements.",
+      "collaboration_summary": "Summary of the evidence of collaboration between the members, based on the graph.",
+      "main_limitation": "Main perceived limitation of the team, if any."
+    }
+  ]
+}
+
+
+*Note:* generate recommendations for all projects present in target_projects.json.
