@@ -1,0 +1,525 @@
+Vou inspecionar os três JSONs, cruzar requisitos técnicos com histórico de colaboração e gerar uma recomendação por projeto mantendo exatamente o team_size de cada um.
+
+Já identifiquei que alguns requisitos raros, como Amazon ECS, AWS Step Functions, Amazon Kendra, Next.js, Moonraker e NumPy, precisam pesar mais na seleção porque poucos perfis os cobrem. Vou usar esses pontos como âncoras e só depois ajustar colaboração e complementaridade.
+
+Pensou por 5m 35s
+
+{
+"model_reasoning_summary": "Teams were formed by first covering MUST requirements across domain, ecosystem, and language, then improving SHOULD and COULD coverage without creating excessive redundancy. Collaboration history from the graph was used as a secondary preference when it did not reduce technical coverage.",
+"recommendations": [
+{
+"project_id": "P1",
+"project_name": "Personal Print AI",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_655",
+"reason": "Strong anchor for AI, Mobile, Cloud, React Native, JavaScript, Python and TypeScript; also covers IoT, Amazon Lex, AWS IoT Core, Node.js and Raspberry Pi."
+},
+{
+"developer_id": "Dev_636",
+"reason": "Adds React Native, JavaScript, Python, TypeScript, Google Gemini, Node.js, Raspberry Pi and PowerShell."
+},
+{
+"developer_id": "Dev_178",
+"reason": "Complements AI, Cloud, Mobile, JavaScript and Python with Amazon Lex, AWS IoT Core, LangChain, LLaMA and MQTT."
+},
+{
+"developer_id": "Dev_63",
+"reason": "Adds AI, Cloud, Mobile and Python, with Amazon Lex, Google Gemini, Raspberry Pi and Java as SHOULD coverage."
+},
+{
+"developer_id": "Dev_447",
+"reason": "Reinforces AI and Mobile domain coverage without adding excessive ecosystem redundancy."
+},
+{
+"developer_id": "Dev_435",
+"reason": "Adds Cloud, Mobile, TypeScript, IoT and Java, improving language and domain balance."
+},
+{
+"developer_id": "Dev_27",
+"reason": "Adds Mobile and Python depth, useful for implementation capacity after rare ecosystem items are covered."
+},
+{
+"developer_id": "Dev_36",
+"reason": "Adds AI, Cloud, Mobile and IoT, plus Java, Amazon S3 and MQTT."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Artificial Intelligence, Mobile, Cloud, React Native, JavaScript, Python and TypeScript.",
+"should_could_summary": "All SHOULD requirements are covered: IoT, Amazon Lex, AWS IoT Core, Google Gemini, Node.js, Raspberry Pi, Java and PowerShell. COULD coverage is also complete for API Gateway, S3, Lambda, LangChain, LLaMA, MQTT and Shell Script.",
+"collaboration_summary": "The graph shows 27 of 28 possible pairwise collaborations, with total collaboration weight 14.05 and 80 historical collaboration signals.",
+"main_limitation": "The team has some overlap in AI/Mobile/Cloud, but this is acceptable because the rare React Native and AI/IoT cloud requirements are fully covered."
+},
+{
+"project_id": "P2",
+"project_name": "2025_PrintAI Anomaly Threat Detection and Remediation",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_169",
+"reason": "Covers Embedded Systems, IoT, Web, Linux, Raspberry Pi, TensorFlow, C, C++ and Python."
+},
+{
+"developer_id": "Dev_479",
+"reason": "Adds IoT/Web, Linux, Raspberry Pi, TensorFlow and Python, plus AI, Cloud, AWS, Docker, FastAPI and Windows."
+},
+{
+"developer_id": "Dev_177",
+"reason": "Strengthens Embedded Systems, IoT, Web, Linux, TensorFlow, C, C++ and Python, with Docker and FastAPI support."
+},
+{
+"developer_id": "Dev_550",
+"reason": "Covers the embedded/IoT/Web language needs and adds AI, Cloud, AWS, LLaMA, HTML and Java."
+},
+{
+"developer_id": "Dev_676",
+"reason": "Adds Embedded Systems, IoT, Web, Raspberry Pi, TensorFlow, C, C++, Python, LLaMA, Bash and SQL."
+},
+{
+"developer_id": "Dev_545",
+"reason": "Complements the embedded stack with Linux, Raspberry Pi, C, C++, Python, AWS, Windows, Bash, CSS, Java and SQL."
+},
+{
+"developer_id": "Dev_222",
+"reason": "Adds Mobile and iOS as COULD coverage and improves team continuity after MUST requirements are fully covered."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: IoT, Web, Embedded Systems, Linux, Raspberry Pi, TensorFlow, Python, C and C++.",
+"should_could_summary": "All SHOULD requirements are covered, including AI, Cloud, FastAPI, Windows, AWS, Docker, LLaMA, CSS, Java, Bash, SQL and HTML. COULD coverage is also complete, including Mobile, Hardware, Extended Reality, MQTT, Pandas, Bluetooth, Hugging Face Transformers, iOS, LangChain, C#, Go, JavaScript, Kotlin and Rust.",
+"collaboration_summary": "The graph shows collaboration evidence for all 21 possible pairs, with total collaboration weight 7.00 and 28 historical collaboration signals.",
+"main_limitation": "The collaboration density is complete, but the average weight is moderate. Dev_222 is mainly a collaboration and COULD-coverage choice rather than a MUST specialist."
+},
+{
+"project_id": "P3",
+"project_name": "XControl",
+"team_size": 5,
+"recommended_team": [
+{
+"developer_id": "Dev_82",
+"reason": "Primary fit for Cloud, AI, Amazon ECS, Amazon S3, AWS Step Functions, Python and SQL; also covers CloudWatch, Athena, CloudFront, Lambda and PySpark."
+},
+{
+"developer_id": "Dev_538",
+"reason": "Adds strong Cloud/AI AWS coverage with Amazon ECS, S3, Step Functions, Python, SQL, CloudWatch, PySpark, FastAPI, MLflow and TensorFlow Recommenders."
+},
+{
+"developer_id": "Dev_453",
+"reason": "Reinforces Amazon ECS, S3 and Step Functions while adding AWS Glue, FastAPI, MLflow and TensorFlow Recommenders."
+},
+{
+"developer_id": "Dev_473",
+"reason": "Adds Cloud, Python and AWS Lambda depth around the cloud services."
+},
+{
+"developer_id": "Dev_457",
+"reason": "Adds Artificial Intelligence, Python and MLflow, complementing the data/AI side."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Cloud, Artificial Intelligence, Amazon ECS, Amazon S3, AWS Step Functions, Python and SQL.",
+"should_could_summary": "All SHOULD requirements are covered: Amazon CloudWatch, PySpark, Amazon Athena, Amazon CloudFront and AWS Lambda. COULD coverage includes FastAPI, Metabase, MLflow, TensorFlow Recommenders and AWS Glue; Amazon RDS remains uncovered.",
+"collaboration_summary": "The graph shows collaboration evidence for all 10 possible pairs, with total collaboration weight 4.70 and 23 historical collaboration signals.",
+"main_limitation": "Amazon RDS is the only uncovered COULD item. The team is concentrated around similar AWS profiles, but this is justified by the rare MUST ecosystem requirements."
+},
+{
+"project_id": "P4",
+"project_name": "REVER",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_359",
+"reason": "Covers Cloud, Mobile, Web, AWS, PWA and Python, with AI, Angular, iOS, CSS, HTML, Java and JavaScript."
+},
+{
+"developer_id": "Dev_324",
+"reason": "Adds Cloud/Mobile/Web, AWS, Docker, PWA and SQL, plus AI, Angular, iOS, EJS and WebSocket."
+},
+{
+"developer_id": "Dev_220",
+"reason": "Strong broad fit across Cloud, Mobile, Web, AWS, Docker, PWA, Python and SQL; also covers Hardware, Android, Flask and Metabase."
+},
+{
+"developer_id": "Dev_242",
+"reason": "Reinforces AWS, Docker, PWA, Python and SQL while adding AI, Angular, JavaScript, SCORM, TensorFlow, WebSocket and xAPI."
+},
+{
+"developer_id": "Dev_5",
+"reason": "Adds Cloud, Mobile, Web, AWS, PWA and SQL, plus Android, Flask, Metabase and iOS."
+},
+{
+"developer_id": "Dev_448",
+"reason": "Adds AWS, Docker, Python, SQL and strong front-end language coverage with CSS, HTML, Java and JavaScript."
+},
+{
+"developer_id": "Dev_326",
+"reason": "Adds Cloud, Mobile, Web, AWS, Docker, PWA, Python and SQL with AI and web implementation depth."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Cloud, Mobile, Web, AWS, Progressive Web App (PWA), Docker, Python and SQL.",
+"should_could_summary": "All SHOULD requirements are covered: AI, Hardware, Android, Angular, Flask, iOS, Metabase, CSS, HTML, Java and JavaScript. COULD coverage is complete except C#; covered items include SCORM, TensorFlow, WebSocket, xAPI, EJS, HTTP, C, Shell Script and TypeScript.",
+"collaboration_summary": "The graph shows collaboration evidence for all 21 possible pairs, with total collaboration weight 14.75 and 108 historical collaboration signals.",
+"main_limitation": "C# is the only missing COULD item. The team has several Product Owner roles, so execution planning should ensure enough hands-on development capacity."
+},
+{
+"project_id": "P5",
+"project_name": "Pothole Detector",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_165",
+"reason": "Covers AI, Mobile, Web, AWS, Android, Python and SQL, with Firebase, LLaMA, Ollama, iOS, C, C++, CSS and HTML."
+},
+{
+"developer_id": "Dev_211",
+"reason": "Adds AI/Web, AWS, Docker, Java and SQL, plus Cloud, Desktop Standalone, LLaMA, Terraform, iOS and C/CSS."
+},
+{
+"developer_id": "Dev_326",
+"reason": "Broad technical fit for AI, Mobile, Web, AWS, Docker, Java, Python and SQL, plus LLaMA and JavaScript."
+},
+{
+"developer_id": "Dev_220",
+"reason": "Adds Mobile/Web, AWS, Android, Docker, Java, Python and SQL, with Firebase and Terraform support."
+},
+{
+"developer_id": "Dev_359",
+"reason": "Adds AI, Mobile, Web, AWS, Java and Python, with iOS, Terraform, C, CSS, HTML and JavaScript."
+},
+{
+"developer_id": "Dev_305",
+"reason": "Reinforces Mobile/Web, AWS, Android, Docker, Java and SQL, plus Terraform, iOS, C and CSS."
+},
+{
+"developer_id": "Dev_448",
+"reason": "Adds AI/Mobile/Web, AWS, Docker, Java, Python and SQL, plus LLaMA, iOS, CSS, HTML and JavaScript."
+},
+{
+"developer_id": "Dev_242",
+"reason": "Adds AI/Mobile/Web, AWS, Docker, Java, Python and SQL, with CSS, JavaScript and embedded-related COULD coverage."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Web, Mobile, Artificial Intelligence, AWS, Android, Docker, Python, Java and SQL.",
+"should_could_summary": "All SHOULD requirements are covered: Cloud, Desktop Standalone, Firebase, iOS, LLaMA, Ollama, Terraform, HTML, C, C++, CSS and JavaScript. COULD coverage is broad, including E-commerce, Embedded Systems, Hardware, Angular, LangChain, React, Spring Boot, Windows, Amazon Bedrock, Bash, C#, Rust and TypeScript; Go and Kotlin remain uncovered.",
+"collaboration_summary": "The graph shows 27 of 28 possible pairwise collaborations, with total collaboration weight 15.60 and 82 historical collaboration signals.",
+"main_limitation": "Go and Kotlin are not covered, but they are only COULD requirements. The team is strong technically, though several members overlap heavily in AWS/Docker/Web."
+},
+{
+"project_id": "P6",
+"project_name": "GTQ",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_351",
+"reason": "Covers Web, Android, iOS and Python, with AI, REST API, Bluetooth, .NET, C, C#, HTML and Java."
+},
+{
+"developer_id": "Dev_317",
+"reason": "Adds Cloud, Web, Docker and Python, plus Hardware, HMI, REST API, Bash, Linux, Load Cells, Modbus and MQTT."
+},
+{
+"developer_id": "Dev_516",
+"reason": "Compact fit for Cloud, Android, Docker and iOS, with AWS as SHOULD coverage."
+},
+{
+"developer_id": "Dev_145",
+"reason": "Covers Cloud, Web, Android, Docker, iOS and Python, plus Hardware, Mobile, AWS, Bluetooth, REST API, C and Java."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Web, Cloud, Android, Docker, iOS and Python.",
+"should_could_summary": "All SHOULD requirements are covered: AI, Hardware, Mobile, REST API, .NET, AWS, Bluetooth, HMI, Bash, C, C#, HTML and Java. COULD coverage is also complete for Kafka, Linux, Load Cells, Modbus, MQTT, NFC, JavaScript and SQL.",
+"collaboration_summary": "The graph shows collaboration evidence for all 6 possible pairs, with total collaboration weight 3.55 and 17 historical collaboration signals.",
+"main_limitation": "The team is small and well matched; the main risk is limited redundancy if one mobile specialist becomes unavailable."
+},
+{
+"project_id": "P7",
+"project_name": "EnergySense",
+"team_size": 6,
+"recommended_team": [
+{
+"developer_id": "Dev_483",
+"reason": "Core fit for Mobile, Web, AWS, Android, iOS, C, C# and Java; also covers Cloud, Embedded Systems, Docker, MQTT, React, SQL and TypeScript."
+},
+{
+"developer_id": "Dev_494",
+"reason": "Adds Android and iOS implementation depth, plus React and Spring Boot as supporting ecosystem coverage."
+},
+{
+"developer_id": "Dev_490",
+"reason": "Strong Mobile/Web profile covering AWS, Android, iOS, C, C# and Java, with MQTT, React, Python, SQL and CSS."
+},
+{
+"developer_id": "Dev_453",
+"reason": "Adds Mobile/Web, AWS, Android, iOS, C and C#, plus AI, Cloud, Docker, MQTT, HTTP, Python, SQL and HTML."
+},
+{
+"developer_id": "Dev_311",
+"reason": "Adds Mobile/Web, Android, iOS, AI, Docker, Python and TypeScript, complementing the mobile/front-end side."
+},
+{
+"developer_id": "Dev_480",
+"reason": "Adds Mobile/Web, Android, iOS, C and C#, plus .NET, HTTP, MQTT, React, SQL and Swift."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Mobile, Web, Android, iOS, AWS, C, C# and Java.",
+"should_could_summary": "All SHOULD requirements are covered: AI, Cloud, Embedded Systems, Docker, MQTT, .NET, HTTP, React, Python, SQL, TypeScript, CSS and HTML. COULD coverage is also complete for Spring Boot, SQLite, Unity, Angular, Google Maps, JWT, JavaScript, Rust, Swift, Go and Kotlin.",
+"collaboration_summary": "The graph shows collaboration evidence for all 15 possible pairs, with total collaboration weight 13.25 and 60 historical collaboration signals.",
+"main_limitation": "The team is very strong technically and collaboratively; the only practical limitation is some overlap around Android/iOS that should be managed through clear ownership."
+},
+{
+"project_id": "P8",
+"project_name": "VRR Vulnerability Resolution and Recommendation",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_326",
+"reason": "Best technical anchor: covers AI, Web, FastAPI, Microsoft SQL Server, Next.js, JavaScript, Python and SQL, plus JWT and Recharts."
+},
+{
+"developer_id": "Dev_46",
+"reason": "Adds Web-domain support and helps preserve graph-based collaboration after the main technical requirements are covered."
+},
+{
+"developer_id": "Dev_354",
+"reason": "Adds AI/Web, FastAPI, Microsoft SQL Server, Python and SQL, plus Pandas, XGBoost, scikit-learn, NumPy, Ollama and PyTorch."
+},
+{
+"developer_id": "Dev_525",
+"reason": "Adds AI/Web, Microsoft SQL Server, Python and SQL, with Pandas support."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Artificial Intelligence, Web, FastAPI, Microsoft SQL Server, Next.js, Python, JavaScript and SQL.",
+"should_could_summary": "All SHOULD ecosystem requirements are covered: Pandas, Recharts, scikit-learn, XGBoost and JWT. COULD coverage is complete for NumPy, Ollama, PyTorch and REST API.",
+"collaboration_summary": "The graph shows collaboration evidence for all 6 possible pairs, with total collaboration weight 4.00 and 16 historical collaboration signals.",
+"main_limitation": "Dev_46 has limited explicit technical coverage for this project; the choice is mainly justified by collaboration after complete MUST/SHOULD coverage by the other members."
+},
+{
+"project_id": "P9",
+"project_name": "EGRID",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_8",
+"reason": "Very strong fit covering Cloud, Mobile, Web, Angular, AWS, Docker, C, CSS and HTML, plus Hardware, REST API, React and Spring Boot."
+},
+{
+"developer_id": "Dev_486",
+"reason": "Covers all main domains and core Angular/AWS/Docker/C/CSS/HTML needs, while adding SCADA and Android support."
+},
+{
+"developer_id": "Dev_689",
+"reason": "Adds Cloud/Mobile/Web, AWS, Angular, CSS and HTML, plus Hardware, Android, REST API, Spring Boot, JavaScript and TypeScript."
+},
+{
+"developer_id": "Dev_65",
+"reason": "Reinforces Cloud/Mobile/Web, AWS, Angular, Docker, C and HTML, with Android, REST API, React, Spring Boot and iOS."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Cloud, Mobile, Web, Angular, AWS, Docker, CSS, C and HTML.",
+"should_could_summary": "All SHOULD requirements are covered: Hardware, SCADA, React, Android, REST API, Spring Boot, Amazon Cognito, Java, JavaScript, Python, SQL and TypeScript. COULD coverage is also complete for Amazon DynamoDB, Amazon Polly, HTTP, Ionic, Linux, Rust and iOS.",
+"collaboration_summary": "The graph shows collaboration evidence for all 6 possible pairs, with total collaboration weight 2.25 and 9 historical collaboration signals.",
+"main_limitation": "The collaboration evidence exists for all pairs but is lighter than in several other teams; technically, the team covers the project very well."
+},
+{
+"project_id": "P10",
+"project_name": "2025_RedePatas",
+"team_size": 5,
+"recommended_team": [
+{
+"developer_id": "Dev_154",
+"reason": "Covers Mobile, Docker, REST API, Windows and Python, with AI, Cloud, AWS, Flask, HTTP, C, C++, CSS and SQL."
+},
+{
+"developer_id": "Dev_449",
+"reason": "Covers Mobile, Docker, REST API, Windows and Python, plus AI, FastAPI, Flask, HTTP, MongoDB, C, C++ and SQL."
+},
+{
+"developer_id": "Dev_479",
+"reason": "Adds Docker, REST API, Windows and Python, with AI, Cloud, AWS, FastAPI, MongoDB and CSS."
+},
+{
+"developer_id": "Dev_473",
+"reason": "Adds Docker, Windows and Python, plus Cloud, AWS, C and C++ for implementation depth."
+},
+{
+"developer_id": "Dev_354",
+"reason": "Adds Docker, REST API, Windows and Python, with AI, Cloud, AWS, FastAPI, MongoDB, CSS and SQL."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Mobile, Docker, REST API, Windows and Python.",
+"should_could_summary": "All SHOULD requirements are covered: AI, Cloud, AWS, FastAPI, Flask, HTTP, MongoDB, C, C++, CSS and SQL. COULD coverage is also complete for Web, Hardware, IoT, Desktop Standalone, Embedded Systems, Extended Reality, .NET, Amazon DynamoDB, Progressive Web App, React, SAP, Windows Service, C#, Go and Rust.",
+"collaboration_summary": "The graph shows collaboration evidence for all 10 possible pairs, with total collaboration weight 5.90 and 25 historical collaboration signals.",
+"main_limitation": "The team is technically dense but has repeated Python/Docker/AI profiles; ownership should be split by API, data/AI and Windows/client responsibilities."
+},
+{
+"project_id": "P11",
+"project_name": "AITeams",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_402",
+"reason": "Primary fit for AI, Cloud, AWS, Amazon Bedrock, Amazon Kendra and SQL, with AWS Glue, Java and Python."
+},
+{
+"developer_id": "Dev_382",
+"reason": "Adds AI, Cloud, AWS, Amazon Bedrock, Amazon Kendra and SQL, plus AWS Glue, REST API and Java."
+},
+{
+"developer_id": "Dev_615",
+"reason": "Adds AI, Cloud, AWS, SQL, Web, REST API and Python, supporting implementation breadth."
+},
+{
+"developer_id": "Dev_183",
+"reason": "Adds AI, Cloud, AWS, Amazon Kendra and SQL, plus REST API, Java and Python."
+},
+{
+"developer_id": "Dev_477",
+"reason": "Adds AI, Cloud, AWS, Amazon Bedrock and SQL, with Web, Java and Python."
+},
+{
+"developer_id": "Dev_27",
+"reason": "Adds Web and Python capacity after the rare Amazon Kendra/Bedrock requirements are covered."
+},
+{
+"developer_id": "Dev_257",
+"reason": "Adds AI, Cloud, AWS, Amazon Bedrock, Web and Python, with Docker/Angular as COULD coverage."
+},
+{
+"developer_id": "Dev_496",
+"reason": "Adds AI, Cloud, AWS, Java and Python, supporting delivery capacity and reducing dependence on a few specialists."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Artificial Intelligence, Cloud, AWS, Amazon Kendra, Amazon Bedrock and SQL.",
+"should_could_summary": "All SHOULD requirements are covered: Web, REST API, AWS Glue, Java and Python. COULD coverage is also complete for Angular, Azure OpenAI, Docker, Microsoft SQL Server, Microsoft SharePoint, Snowflake, HTML, SCSS and TypeScript.",
+"collaboration_summary": "The graph shows collaboration evidence for all 28 possible pairs, with total collaboration weight 22.10 and 108 historical collaboration signals.",
+"main_limitation": "Several members overlap in AWS/AI; the overlap is useful because Amazon Kendra and Bedrock are relatively specialized, but responsibilities should be divided to avoid redundancy."
+},
+{
+"project_id": "P12",
+"project_name": "InsPOS",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_220",
+"reason": "Covers Cloud, Web, Docker and Java, with Mobile, AWS, CSS and Python."
+},
+{
+"developer_id": "Dev_448",
+"reason": "Adds Cloud/Web, Docker and Java, plus AI, Mobile, AWS, CSS and Python."
+},
+{
+"developer_id": "Dev_242",
+"reason": "Adds Cloud/Web, Docker and Java, with AI, Mobile, AWS, HTTP, CSS and Python."
+},
+{
+"developer_id": "Dev_537",
+"reason": "Adds Web, Docker, Java, Mobile, Moonraker and C, covering a rare project-specific ecosystem item."
+},
+{
+"developer_id": "Dev_305",
+"reason": "Adds Cloud/Web, Docker, Java, IoT, Mobile, AWS, C and CSS."
+},
+{
+"developer_id": "Dev_503",
+"reason": "Adds Cloud/Web, Docker and Java, with AI, Mobile, AWS and Python."
+},
+{
+"developer_id": "Dev_495",
+"reason": "Adds Cloud/Web, Docker and Java, plus AI, IoT, Mobile, AWS and Python."
+},
+{
+"developer_id": "Dev_170",
+"reason": "Adds Cloud/Web and Java, with AI, IoT, Mobile, AWS, HTTP, MQTT and C."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Cloud, Web, Docker and Java.",
+"should_could_summary": "SHOULD coverage includes IoT, AI, Mobile, Moonraker, AWS, HTTP, MQTT, C, CSS and Python. GPIO is the only uncovered SHOULD ecosystem item. COULD coverage is broad, but Extended Reality and Lua remain uncovered.",
+"collaboration_summary": "The graph shows collaboration evidence for all 28 possible pairs, with total collaboration weight 19.00 and 90 historical collaboration signals.",
+"main_limitation": "GPIO is not covered, and the team includes several Product Owner profiles; the main implementation risk is hands-on embedded/printer integration depth."
+},
+{
+"project_id": "P13",
+"project_name": "NeuromemIC",
+"team_size": 9,
+"recommended_team": [
+{
+"developer_id": "Dev_583",
+"reason": "Strong anchor for Hardware, NumPy, C and Python, with Web, Linux, C++ and HTML."
+},
+{
+"developer_id": "Dev_720",
+"reason": "Adds direct Hardware, NumPy, C and Python coverage for the core technical requirement."
+},
+{
+"developer_id": "Dev_700",
+"reason": "Adds Hardware, NumPy, C and Python, plus Web, Linux and C++ support."
+},
+{
+"developer_id": "Dev_579",
+"reason": "Adds C and Python with AI/Web, Linux and C++ coverage."
+},
+{
+"developer_id": "Dev_570",
+"reason": "Adds C and Python, plus TLS, C++ and cloud/front-end COULD coverage."
+},
+{
+"developer_id": "Dev_589",
+"reason": "Adds Hardware, NumPy, C and Python, plus AI and TLS."
+},
+{
+"developer_id": "Dev_316",
+"reason": "Adds Hardware, C and Python, plus HTML, AWS and Docker."
+},
+{
+"developer_id": "Dev_498",
+"reason": "Adds Hardware, C, Python and HTML implementation capacity."
+},
+{
+"developer_id": "Dev_571",
+"reason": "Adds Hardware, C, Python and TLS, reinforcing the low-level/security side."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Hardware, NumPy, C and Python.",
+"should_could_summary": "All SHOULD requirements are covered: Web, Artificial Intelligence, Linux, TLS, C++ and HTML. COULD coverage is also complete for Embedded Systems, AWS, Angular, Docker, HMI, Hugging Face Transformers, Progressive Web App, Bash, CSS and MATLAB.",
+"collaboration_summary": "The graph shows collaboration evidence for all 36 possible pairs, with total collaboration weight 30.55 and 188 historical collaboration signals.",
+"main_limitation": "The team is highly collaborative and covers the hardware/data stack, but it has many coordination-oriented roles; hands-on ownership for C/Python implementation should be explicit."
+},
+{
+"project_id": "P14",
+"project_name": "LT-IA",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_5",
+"reason": "Covers Cloud, AWS, HTML and SQL, with Mobile, Web and AWS Lambda support."
+},
+{
+"developer_id": "Dev_220",
+"reason": "Adds Cloud, AWS, Docker, HTML and SQL, plus Angular, Spring Boot, Windows, CSS, Java and Python."
+},
+{
+"developer_id": "Dev_326",
+"reason": "Adds Cloud, AWS, Docker, HTML and SQL, plus AI, Mobile, Web, REST API, Spring Boot, JavaScript and Python."
+},
+{
+"developer_id": "Dev_503",
+"reason": "Adds Cloud, AWS, Docker and HTML, with AI, Mobile, Web, AWS Lambda, Angular, Spring Boot, JavaScript and Python."
+},
+{
+"developer_id": "Dev_357",
+"reason": "Covers Cloud, AWS, MySQL, HTML and SQL, plus AI, Mobile, Web, Angular, REST API and Spring Boot."
+},
+{
+"developer_id": "Dev_170",
+"reason": "Adds Cloud, AWS, HTML, AI, Mobile, Web, REST API, C and Java."
+},
+{
+"developer_id": "Dev_250",
+"reason": "Covers Cloud, AWS, Docker, MySQL, HTML and SQL, plus AI, Mobile, Web, Angular, REST API, C, CSS, Java, JavaScript and Python."
+}
+],
+"must_coverage_summary": "All MUST requirements are covered: Cloud, AWS, Docker, MySQL, SQL and HTML.",
+"should_could_summary": "All SHOULD requirements are covered: Mobile, Web, AI, Angular, AWS Lambda, REST API, Spring Boot, Windows, Java, JavaScript, Python, C and CSS. COULD coverage is broad, including IoT, Android, Django, Hugging Face Transformers, Linux, MQTT, PostgreSQL, Rust, Shell Script, Swift and TypeScript; C++ remains uncovered.",
+"collaboration_summary": "The graph shows collaboration evidence for all 21 possible pairs, with total collaboration weight 12.00 and 69 historical collaboration signals.",
+"main_limitation": "C++ is the only missing COULD language. The team has strong web/cloud coverage, but MySQL coverage depends mainly on Dev_357 and Dev_250."
+}
+]
+}

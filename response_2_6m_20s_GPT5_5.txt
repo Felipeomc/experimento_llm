@@ -1,0 +1,521 @@
+Pensou por 6m 20s
+
+{
+"model_reasoning_summary": "I prioritized complete MUST coverage, then selected complementary profiles to cover SHOULD and COULD items, and used the collaboration graph as a tie-breaker when it did not reduce technical fit.",
+"recommendations": [
+{
+"project_id": "P1",
+"project_name": "Personal Print AI",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_655",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, React Native, JavaScript; SHOULD: IoT, Amazon Lex, AWS IoT Core, Google Gemini; COULD: Amazon API Gateway, Amazon S3, AWS Lambda."
+},
+{
+"developer_id": "Dev_636",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, React Native, JavaScript; SHOULD: IoT, Google Gemini, Node.js, Raspberry Pi; COULD: MQTT."
+},
+{
+"developer_id": "Dev_178",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, JavaScript, Python; SHOULD: IoT, Amazon Lex, AWS IoT Core, Google Gemini; COULD: AWS Lambda, LangChain, LLaMA."
+},
+{
+"developer_id": "Dev_227",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, Python; SHOULD: Google Gemini, Raspberry Pi, Java; COULD: AWS Lambda."
+},
+{
+"developer_id": "Dev_686",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, Python; SHOULD: Java; COULD: LangChain, LLaMA."
+},
+{
+"developer_id": "Dev_36",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud; SHOULD: IoT, Java; COULD: Amazon S3, MQTT."
+},
+{
+"developer_id": "Dev_63",
+"reason": "MUST: Artificial Intelligence, Mobile, Cloud, Python; SHOULD: Amazon Lex, Google Gemini, Raspberry Pi, Java."
+},
+{
+"developer_id": "Dev_435",
+"reason": "MUST: Mobile, Cloud, TypeScript; SHOULD: IoT, Java."
+}
+],
+"must_coverage_summary": "7 of 7 MUST requirements covered: Artificial Intelligence, Mobile, Cloud, React Native, JavaScript, Python, TypeScript.",
+"should_could_summary": "8 of 8 SHOULD requirements covered: IoT, Amazon Lex, AWS IoT Core, Google Gemini, Node.js, Raspberry Pi, Java, PowerShell. 7 of 7 COULD requirements covered: Amazon API Gateway, Amazon S3, AWS Lambda, LangChain, LLaMA, MQTT, Shell Script.",
+"collaboration_summary": "The graph shows prior collaboration for 27 of 28 member-pairs, with average edge weight 0.38; strongest observed links include Dev_655-Dev_178, Dev_655-Dev_227, and Dev_636-Dev_178.",
+"main_limitation": "No technical coverage gap; the main limitation is that only 27 of 28 member-pairs have collaboration edges in the graph."
+},
+{
+"project_id": "P2",
+"project_name": "2025_PrintAI Anomaly Threat Detection and Remediation",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_540",
+"reason": "MUST: Embedded Systems, Linux, Raspberry Pi, Python, C; SHOULD: Windows; COULD: Hardware, Bluetooth, C#."
+},
+{
+"developer_id": "Dev_467",
+"reason": "MUST: IoT, Web, Raspberry Pi, Python, C; SHOULD: Windows; COULD: Hardware, MQTT, Bluetooth."
+},
+{
+"developer_id": "Dev_479",
+"reason": "MUST: IoT, Web, Linux, Raspberry Pi, TensorFlow; SHOULD: Artificial Intelligence, Cloud, FastAPI, Windows; COULD: Hardware, MQTT, Pandas."
+},
+{
+"developer_id": "Dev_449",
+"reason": "MUST: Embedded Systems, Raspberry Pi, Python, C, C++; SHOULD: Artificial Intelligence, FastAPI, Windows, Docker; COULD: Extended Reality, Hardware, Mobile."
+},
+{
+"developer_id": "Dev_391",
+"reason": "MUST: Web, Linux, Raspberry Pi, Python, C; SHOULD: Cloud, Windows, Docker, Java; COULD: Hardware, MQTT, Bluetooth."
+},
+{
+"developer_id": "Dev_154",
+"reason": "MUST: Web, TensorFlow, Python, C, C++; SHOULD: Artificial Intelligence, Cloud, Windows, AWS; COULD: Hardware, Mobile, C#."
+},
+{
+"developer_id": "Dev_354",
+"reason": "MUST: Web, Linux, Python; SHOULD: Artificial Intelligence, Cloud, FastAPI, Windows; COULD: Hardware, Pandas, Hugging Face Transformers."
+}
+],
+"must_coverage_summary": "9 of 9 MUST requirements covered: IoT, Web, Embedded Systems, Linux, Raspberry Pi, TensorFlow, Python, C, C++.",
+"should_could_summary": "12 of 12 SHOULD requirements covered: Artificial Intelligence, Cloud, FastAPI, Windows, AWS, Docker, LLaMA, CSS, Java, Bash, SQL, HTML. 14 of 14 COULD requirements covered: Extended Reality, Hardware, Mobile, MQTT, Pandas, Bluetooth, Hugging Face Transformers, iOS, LangChain, C#, Go, JavaScript, Kotlin, Rust.",
+"collaboration_summary": "The graph shows prior collaboration for 21 of 21 member-pairs, with average edge weight 0.52; strongest observed links include Dev_540-Dev_449, Dev_467-Dev_449, and Dev_449-Dev_391.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P3",
+"project_name": "XControl",
+"team_size": 5,
+"recommended_team": [
+{
+"developer_id": "Dev_154",
+"reason": "MUST: Cloud, Artificial Intelligence, Python, SQL; SHOULD: AWS Lambda."
+},
+{
+"developer_id": "Dev_449",
+"reason": "MUST: Artificial Intelligence, Python, SQL; COULD: FastAPI."
+},
+{
+"developer_id": "Dev_538",
+"reason": "MUST: Cloud, Artificial Intelligence, Amazon ECS, Amazon S3, AWS Step Functions; SHOULD: Amazon CloudWatch, PySpark; COULD: FastAPI, MLflow, TensorFlow Recommenders."
+},
+{
+"developer_id": "Dev_391",
+"reason": "MUST: Cloud, Amazon ECS, Amazon S3, AWS Step Functions, Python; SHOULD: Amazon CloudWatch, Amazon Athena, Amazon CloudFront, AWS Lambda; COULD: Metabase, Amazon RDS."
+},
+{
+"developer_id": "Dev_354",
+"reason": "MUST: Cloud, Artificial Intelligence, Python, SQL; COULD: FastAPI, AWS Glue."
+}
+],
+"must_coverage_summary": "7 of 7 MUST requirements covered: Cloud, Artificial Intelligence, Amazon ECS, Amazon S3, AWS Step Functions, Python, SQL.",
+"should_could_summary": "5 of 5 SHOULD requirements covered: Amazon CloudWatch, PySpark, Amazon Athena, Amazon CloudFront, AWS Lambda. 6 of 6 COULD requirements covered: FastAPI, Metabase, MLflow, TensorFlow Recommenders, Amazon RDS, AWS Glue.",
+"collaboration_summary": "The graph shows prior collaboration for 7 of 10 member-pairs, with average edge weight 0.42; strongest observed links include Dev_449-Dev_391, Dev_449-Dev_354, and Dev_154-Dev_538.",
+"main_limitation": "No technical coverage gap; the main limitation is that only 7 of 10 member-pairs have collaboration edges in the graph."
+},
+{
+"project_id": "P4",
+"project_name": "REVER",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_305",
+"reason": "MUST: Cloud, Mobile, Web, AWS, Docker; SHOULD: Android, Angular, iOS, CSS; COULD: Embedded Systems, TensorFlow, xAPI."
+},
+{
+"developer_id": "Dev_559",
+"reason": "MUST: Mobile, Web, AWS, Progressive Web App (PWA), Docker; SHOULD: Angular, CSS; COULD: C, C#, TypeScript."
+},
+{
+"developer_id": "Dev_220",
+"reason": "MUST: Cloud, Mobile, Web, AWS, Progressive Web App (PWA); SHOULD: Hardware, Android, Angular, Flask; COULD: SCORM, TensorFlow, WebSocket."
+},
+{
+"developer_id": "Dev_170",
+"reason": "MUST: Cloud, Mobile, Web, AWS, Progressive Web App (PWA); SHOULD: Artificial Intelligence, Android, iOS, HTML; COULD: Embedded Systems, HTTP, C."
+},
+{
+"developer_id": "Dev_503",
+"reason": "MUST: Cloud, Mobile, Web, AWS, Progressive Web App (PWA); SHOULD: Artificial Intelligence, Android, Angular, iOS; COULD: SCORM, WebSocket, xAPI."
+},
+{
+"developer_id": "Dev_578",
+"reason": "MUST: Cloud, Mobile, Web, Progressive Web App (PWA), Docker; SHOULD: Artificial Intelligence, Android, Flask, iOS."
+},
+{
+"developer_id": "Dev_492",
+"reason": "MUST: Mobile, Web, AWS, Progressive Web App (PWA), Docker; SHOULD: Artificial Intelligence, Angular, Flask, CSS; COULD: WebSocket, HTTP."
+}
+],
+"must_coverage_summary": "8 of 8 MUST requirements covered: Cloud, Mobile, Web, AWS, Progressive Web App (PWA), Docker, Python, SQL.",
+"should_could_summary": "11 of 11 SHOULD requirements covered: Artificial Intelligence, Hardware, Android, Angular, Flask, iOS, Metabase, CSS, HTML, Java, JavaScript. 11 of 11 COULD requirements covered: Embedded Systems, SCORM, TensorFlow, WebSocket, xAPI, EJS, HTTP, C, C#, Shell Script, TypeScript.",
+"collaboration_summary": "The graph shows prior collaboration for 21 of 21 member-pairs, with average edge weight 0.75; strongest observed links include Dev_578-Dev_492, Dev_559-Dev_492, and Dev_503-Dev_492.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P5",
+"project_name": "Pothole Detector",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_503",
+"reason": "MUST: Web, Mobile, Artificial Intelligence, AWS, Android; SHOULD: Cloud, iOS, HTML, JavaScript; COULD: Angular, React, Spring Boot."
+},
+{
+"developer_id": "Dev_183",
+"reason": "MUST: Web, Mobile, Artificial Intelligence, AWS, Android; SHOULD: Cloud, Firebase, iOS, LLaMA; COULD: Hardware, Angular, LangChain."
+},
+{
+"developer_id": "Dev_211",
+"reason": "MUST: Web, Artificial Intelligence, AWS, Docker, Java; SHOULD: Cloud, Desktop Standalone, iOS, LLaMA; COULD: E-commerce, Angular, React."
+},
+{
+"developer_id": "Dev_448",
+"reason": "MUST: Web, Mobile, Artificial Intelligence, AWS, Docker; SHOULD: Cloud, iOS, LLaMA, HTML; COULD: Angular, Spring Boot, Bash."
+},
+{
+"developer_id": "Dev_305",
+"reason": "MUST: Web, Mobile, AWS, Android, Docker; SHOULD: Cloud, iOS, Terraform, C; COULD: Embedded Systems, Angular, React."
+},
+{
+"developer_id": "Dev_220",
+"reason": "MUST: Web, Mobile, AWS, Android, Docker; SHOULD: Cloud, Firebase, Terraform, HTML; COULD: Hardware, Angular, Spring Boot."
+},
+{
+"developer_id": "Dev_359",
+"reason": "MUST: Web, Mobile, Artificial Intelligence, AWS, Python; SHOULD: Cloud, iOS, Terraform, HTML; COULD: Angular, Spring Boot, Amazon Bedrock."
+},
+{
+"developer_id": "Dev_293",
+"reason": "MUST: Web, Mobile, Artificial Intelligence, AWS, Android; SHOULD: Cloud, iOS, HTML, JavaScript; COULD: Hardware, React, Windows."
+}
+],
+"must_coverage_summary": "9 of 9 MUST requirements covered: Web, Mobile, Artificial Intelligence, AWS, Android, Docker, Python, Java, SQL.",
+"should_could_summary": "12 of 12 SHOULD requirements covered: Cloud, Desktop Standalone, Firebase, iOS, LLaMA, Ollama, Terraform, HTML, C, C++, CSS, JavaScript. 15 of 15 COULD requirements covered: E-commerce, Embedded Systems, Hardware, Angular, LangChain, React, Spring Boot, Windows, Amazon Bedrock, Bash, C#, Go, Kotlin, Rust, TypeScript.",
+"collaboration_summary": "The graph shows prior collaboration for 25 of 28 member-pairs, with average edge weight 0.48; strongest observed links include Dev_503-Dev_220, Dev_448-Dev_359, and Dev_448-Dev_220.",
+"main_limitation": "No technical coverage gap; the main limitation is that only 25 of 28 member-pairs have collaboration edges in the graph."
+},
+{
+"project_id": "P6",
+"project_name": "GTQ",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_7",
+"reason": "MUST: Web, Android, Docker, iOS; SHOULD: Artificial Intelligence, Mobile, HTML, Java; COULD: SQL."
+},
+{
+"developer_id": "Dev_290",
+"reason": "MUST: Web, Cloud, Android, Docker; SHOULD: Artificial Intelligence, Hardware, REST API, AWS; COULD: NFC, SQL."
+},
+{
+"developer_id": "Dev_351",
+"reason": "MUST: Web, Android, iOS, Python; SHOULD: Artificial Intelligence, REST API, .NET, Bluetooth; COULD: NFC, JavaScript, SQL."
+},
+{
+"developer_id": "Dev_317",
+"reason": "MUST: Web, Cloud, Docker, Python; SHOULD: Hardware, REST API, HMI, Bash; COULD: Kafka, Linux, Load Cells."
+}
+],
+"must_coverage_summary": "6 of 6 MUST requirements covered: Web, Cloud, Android, Docker, iOS, Python.",
+"should_could_summary": "13 of 13 SHOULD requirements covered: Artificial Intelligence, Hardware, Mobile, REST API, .NET, AWS, Bluetooth, HMI, Bash, C, C#, HTML, Java. 8 of 8 COULD requirements covered: Kafka, Linux, Load Cells, Modbus, MQTT, NFC, JavaScript, SQL.",
+"collaboration_summary": "The graph shows prior collaboration for 6 of 6 member-pairs, with average edge weight 0.62; strongest observed links include Dev_290-Dev_351, Dev_7-Dev_351, and Dev_7-Dev_290.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P7",
+"project_name": "EnergySense",
+"team_size": 6,
+"recommended_team": [
+{
+"developer_id": "Dev_33",
+"reason": "MUST: Mobile, Web, Android, iOS, AWS; SHOULD: Docker, MQTT, React, HTML; COULD: Spring Boot, Swift, Go."
+},
+{
+"developer_id": "Dev_483",
+"reason": "MUST: Mobile, Web, Android, iOS, AWS; SHOULD: Cloud, Embedded Systems, Docker, MQTT; COULD: SQLite, Unity, Angular."
+},
+{
+"developer_id": "Dev_637",
+"reason": "MUST: Mobile, Web, Android, iOS, AWS; SHOULD: Docker, MQTT, TypeScript, CSS; COULD: Spring Boot, Unity, Angular."
+},
+{
+"developer_id": "Dev_490",
+"reason": "MUST: Mobile, Web, Android, iOS, AWS; SHOULD: Embedded Systems, MQTT, .NET, HTTP; COULD: Spring Boot, SQLite, Google Maps."
+},
+{
+"developer_id": "Dev_453",
+"reason": "MUST: Mobile, Web, Android, iOS, AWS; SHOULD: Artificial Intelligence, Cloud, Docker, MQTT; COULD: SQLite, Unity, Google Maps."
+},
+{
+"developer_id": "Dev_480",
+"reason": "MUST: Mobile, Web, Android, iOS, C; SHOULD: MQTT, .NET, HTTP, React; COULD: SQLite, Unity, Swift."
+}
+],
+"must_coverage_summary": "8 of 8 MUST requirements covered: Mobile, Web, Android, iOS, AWS, C, C#, Java.",
+"should_could_summary": "13 of 13 SHOULD requirements covered: Artificial Intelligence, Cloud, Embedded Systems, Docker, MQTT, .NET, HTTP, React, Python, SQL, TypeScript, CSS, HTML. 11 of 11 COULD requirements covered: Spring Boot, SQLite, Unity, Angular, Google Maps, JWT, JavaScript, Rust, Swift, Go, Kotlin.",
+"collaboration_summary": "The graph shows prior collaboration for 14 of 15 member-pairs, with average edge weight 0.61; strongest observed links include Dev_490-Dev_453, Dev_33-Dev_490, and Dev_483-Dev_453.",
+"main_limitation": "No technical coverage gap; the main limitation is that only 14 of 15 member-pairs have collaboration edges in the graph."
+},
+{
+"project_id": "P8",
+"project_name": "VRR Vulnerability Resolution and Recommendation",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_525",
+"reason": "MUST: Artificial Intelligence, Web, Microsoft SQL Server, Python, SQL; SHOULD: Pandas."
+},
+{
+"developer_id": "Dev_165",
+"reason": "MUST: Artificial Intelligence, Web, Python, SQL; SHOULD: JWT; COULD: Ollama, REST API."
+},
+{
+"developer_id": "Dev_105",
+"reason": "MUST: Artificial Intelligence, Web, FastAPI, Microsoft SQL Server, Next.js; SHOULD: Recharts, scikit-learn, XGBoost; COULD: Ollama."
+},
+{
+"developer_id": "Dev_354",
+"reason": "MUST: Artificial Intelligence, Web, FastAPI, Microsoft SQL Server, Python; SHOULD: Pandas, scikit-learn, XGBoost; COULD: NumPy, Ollama, PyTorch."
+}
+],
+"must_coverage_summary": "8 of 8 MUST requirements covered: Artificial Intelligence, Web, FastAPI, Microsoft SQL Server, Next.js, Python, JavaScript, SQL.",
+"should_could_summary": "5 of 5 SHOULD requirements covered: Pandas, Recharts, scikit-learn, XGBoost, JWT. 4 of 4 COULD requirements covered: NumPy, Ollama, PyTorch, REST API.",
+"collaboration_summary": "The graph shows prior collaboration for 6 of 6 member-pairs, with average edge weight 0.38; strongest observed links include Dev_525-Dev_354, Dev_525-Dev_165, and Dev_165-Dev_354.",
+"main_limitation": "No technical coverage gap; collaboration evidence exists but is moderate, with average graph weight 0.38."
+},
+{
+"project_id": "P9",
+"project_name": "EGRID",
+"team_size": 4,
+"recommended_team": [
+{
+"developer_id": "Dev_140",
+"reason": "MUST: Mobile, Web, Angular, Docker, CSS; SHOULD: Hardware, React, Android, REST API; COULD: HTTP, iOS."
+},
+{
+"developer_id": "Dev_8",
+"reason": "MUST: Cloud, Mobile, Web, Angular, AWS; SHOULD: Hardware, React, Android, REST API; COULD: Amazon DynamoDB, Amazon Polly, HTTP."
+},
+{
+"developer_id": "Dev_486",
+"reason": "MUST: Cloud, Mobile, Web, Angular, AWS; SHOULD: SCADA, React, Android, REST API; COULD: HTTP, Linux, Rust."
+},
+{
+"developer_id": "Dev_382",
+"reason": "MUST: Cloud, Mobile, Web, Angular, AWS; SHOULD: Android, REST API, Java, SQL."
+}
+],
+"must_coverage_summary": "9 of 9 MUST requirements covered: Cloud, Mobile, Web, Angular, AWS, Docker, CSS, C, HTML.",
+"should_could_summary": "12 of 12 SHOULD requirements covered: Hardware, SCADA, React, Android, REST API, Spring Boot, Amazon Cognito, Java, JavaScript, Python, SQL, TypeScript. 7 of 7 COULD requirements covered: Amazon DynamoDB, Amazon Polly, HTTP, Ionic, iOS, Linux, Rust.",
+"collaboration_summary": "The graph shows prior collaboration for 6 of 6 member-pairs, with average edge weight 0.42; strongest observed links include Dev_140-Dev_382, Dev_140-Dev_8, and Dev_8-Dev_382.",
+"main_limitation": "No technical coverage gap; collaboration evidence exists but is moderate, with average graph weight 0.42."
+},
+{
+"project_id": "P10",
+"project_name": "2025_RedePatas",
+"team_size": 5,
+"recommended_team": [
+{
+"developer_id": "Dev_540",
+"reason": "MUST: REST API, Windows, Python; SHOULD: Flask, MongoDB, C, C++; COULD: Desktop Standalone, Embedded Systems, Hardware."
+},
+{
+"developer_id": "Dev_479",
+"reason": "MUST: Docker, REST API, Windows, Python; SHOULD: Artificial Intelligence, Cloud, AWS, FastAPI; COULD: Hardware, IoT, Web."
+},
+{
+"developer_id": "Dev_449",
+"reason": "MUST: Mobile, Docker, REST API, Windows, Python; SHOULD: Artificial Intelligence, FastAPI, Flask, HTTP; COULD: Desktop Standalone, Embedded Systems, Extended Reality."
+},
+{
+"developer_id": "Dev_391",
+"reason": "MUST: Docker, REST API, Windows, Python; SHOULD: Cloud, HTTP, C, C++; COULD: Desktop Standalone, Hardware, Web."
+},
+{
+"developer_id": "Dev_154",
+"reason": "MUST: Mobile, Docker, REST API, Windows, Python; SHOULD: Artificial Intelligence, Cloud, AWS, Flask; COULD: Hardware, Web, React."
+}
+],
+"must_coverage_summary": "5 of 5 MUST requirements covered: Mobile, Docker, REST API, Windows, Python.",
+"should_could_summary": "11 of 11 SHOULD requirements covered: Artificial Intelligence, Cloud, AWS, FastAPI, Flask, HTTP, MongoDB, C, C++, CSS, SQL. 14 of 14 COULD requirements covered: Desktop Standalone, Embedded Systems, Extended Reality, Hardware, IoT, Web, Progressive Web App (PWA), React, SAP, Windows Service, .NET, Amazon DynamoDB, C#, Go.",
+"collaboration_summary": "The graph shows prior collaboration for 10 of 10 member-pairs, with average edge weight 0.55; strongest observed links include Dev_540-Dev_449, Dev_449-Dev_391, and Dev_540-Dev_391.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P11",
+"project_name": "AITeams",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_402",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS, Amazon Kendra, Amazon Bedrock; SHOULD: Web, AWS Glue, Java, Python; COULD: Snowflake, Angular, Docker."
+},
+{
+"developer_id": "Dev_496",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS; SHOULD: Java, Python; COULD: Docker, HTML."
+},
+{
+"developer_id": "Dev_615",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS, SQL; SHOULD: Web, REST API, Python; COULD: Angular, Azure OpenAI, Docker."
+},
+{
+"developer_id": "Dev_382",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS, Amazon Kendra, Amazon Bedrock; SHOULD: Web, REST API, AWS Glue, Java; COULD: Microsoft SharePoint, Microsoft SQL Server, Snowflake."
+},
+{
+"developer_id": "Dev_477",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS, Amazon Bedrock, SQL; SHOULD: Web, Java, Python; COULD: Docker, HTML."
+},
+{
+"developer_id": "Dev_257",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS, Amazon Bedrock; SHOULD: Web, Python; COULD: Angular, Docker."
+},
+{
+"developer_id": "Dev_492",
+"reason": "MUST: Artificial Intelligence, AWS, SQL; SHOULD: Web, REST API, Python; COULD: Angular, Docker."
+},
+{
+"developer_id": "Dev_532",
+"reason": "MUST: Artificial Intelligence, Cloud, AWS; SHOULD: Web, Java, Python; COULD: Docker, HTML."
+}
+],
+"must_coverage_summary": "6 of 6 MUST requirements covered: Artificial Intelligence, Cloud, AWS, Amazon Kendra, Amazon Bedrock, SQL.",
+"should_could_summary": "5 of 5 SHOULD requirements covered: Web, REST API, AWS Glue, Java, Python. 9 of 9 COULD requirements covered: Microsoft SharePoint, Microsoft SQL Server, Snowflake, Angular, Azure OpenAI, Docker, TypeScript, HTML, SCSS.",
+"collaboration_summary": "The graph shows prior collaboration for 28 of 28 member-pairs, with average edge weight 0.78; strongest observed links include Dev_615-Dev_477, Dev_496-Dev_615, and Dev_496-Dev_477.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P12",
+"project_name": "InsPOS",
+"team_size": 8,
+"recommended_team": [
+{
+"developer_id": "Dev_677",
+"reason": "MUST: Cloud, Docker, Java; SHOULD: Artificial Intelligence, AWS, MQTT, C; COULD: Unity."
+},
+{
+"developer_id": "Dev_648",
+"reason": "MUST: Cloud, Web, Docker; SHOULD: IoT, Artificial Intelligence, Moonraker, AWS; COULD: Extended Reality, Hardware, OpenCV."
+},
+{
+"developer_id": "Dev_716",
+"reason": "MUST: Cloud, Docker, Java; SHOULD: IoT, Moonraker, GPIO, HTTP; COULD: Embedded Systems, Raspberry Pi, Unity."
+},
+{
+"developer_id": "Dev_479",
+"reason": "MUST: Cloud, Web, Docker, Java; SHOULD: IoT, Artificial Intelligence, AWS, MQTT; COULD: Hardware, Raspberry Pi, REST API."
+},
+{
+"developer_id": "Dev_395",
+"reason": "MUST: Cloud, Web, Docker, Java; SHOULD: IoT, Mobile, AWS, MQTT; COULD: Embedded Systems, React, Unity."
+},
+{
+"developer_id": "Dev_532",
+"reason": "MUST: Cloud, Web, Docker, Java; SHOULD: Artificial Intelligence, Mobile, AWS, C; COULD: JavaScript."
+},
+{
+"developer_id": "Dev_398",
+"reason": "MUST: Cloud, Docker, Java; SHOULD: IoT, Artificial Intelligence, GPIO, C; COULD: Hardware, REST API, C#."
+},
+{
+"developer_id": "Dev_335",
+"reason": "MUST: Cloud, Web, Docker; SHOULD: MQTT, C, CSS, Python; COULD: Embedded Systems, Extended Reality, OpenCV."
+}
+],
+"must_coverage_summary": "4 of 4 MUST requirements covered: Cloud, Web, Docker, Java.",
+"should_could_summary": "11 of 11 SHOULD requirements covered: IoT, Artificial Intelligence, Mobile, Moonraker, AWS, GPIO, HTTP, MQTT, C, CSS, Python. 15 of 15 COULD requirements covered: Embedded Systems, Extended Reality, Hardware, OpenCV, Raspberry Pi, React, REST API, Unity, WebSocket, Bash, C#, Go, JavaScript, Lua, SQL.",
+"collaboration_summary": "The graph shows prior collaboration for 25 of 28 member-pairs, with average edge weight 0.30; strongest observed links include Dev_532-Dev_398, Dev_716-Dev_335, and Dev_677-Dev_648.",
+"main_limitation": "No technical coverage gap; the main limitation is that only 25 of 28 member-pairs have collaboration edges in the graph."
+},
+{
+"project_id": "P13",
+"project_name": "NeuromemIC",
+"team_size": 9,
+"recommended_team": [
+{
+"developer_id": "Dev_570",
+"reason": "MUST: C, Python; SHOULD: TLS, C++; COULD: AWS, Angular, Progressive Web App (PWA)."
+},
+{
+"developer_id": "Dev_700",
+"reason": "MUST: Hardware, NumPy, C, Python; SHOULD: Web, Linux, C++; COULD: HMI."
+},
+{
+"developer_id": "Dev_583",
+"reason": "MUST: Hardware, NumPy, C, Python; SHOULD: Web, Linux, C++, HTML; COULD: CSS, Bash, MATLAB."
+},
+{
+"developer_id": "Dev_589",
+"reason": "MUST: Hardware, NumPy, C, Python; SHOULD: Artificial Intelligence, TLS; COULD: Hugging Face Transformers."
+},
+{
+"developer_id": "Dev_579",
+"reason": "MUST: C, Python; SHOULD: Web, Artificial Intelligence, Linux, C++; COULD: Embedded Systems, Docker, CSS."
+},
+{
+"developer_id": "Dev_316",
+"reason": "MUST: Hardware, C, Python; SHOULD: HTML; COULD: AWS, Docker."
+},
+{
+"developer_id": "Dev_720",
+"reason": "MUST: Hardware, NumPy, C, Python."
+},
+{
+"developer_id": "Dev_498",
+"reason": "MUST: Hardware, C, Python; SHOULD: HTML."
+},
+{
+"developer_id": "Dev_571",
+"reason": "MUST: Hardware, C, Python; SHOULD: TLS."
+}
+],
+"must_coverage_summary": "4 of 4 MUST requirements covered: Hardware, NumPy, C, Python.",
+"should_could_summary": "6 of 6 SHOULD requirements covered: Web, Artificial Intelligence, Linux, TLS, C++, HTML. 10 of 10 COULD requirements covered: Embedded Systems, AWS, Docker, Angular, HMI, Hugging Face Transformers, Progressive Web App (PWA), CSS, Bash, MATLAB.",
+"collaboration_summary": "The graph shows prior collaboration for 36 of 36 member-pairs, with average edge weight 0.85; strongest observed links include Dev_720-Dev_571, Dev_720-Dev_498, and Dev_700-Dev_589.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+},
+{
+"project_id": "P14",
+"project_name": "LT-IA",
+"team_size": 7,
+"recommended_team": [
+{
+"developer_id": "Dev_689",
+"reason": "MUST: Cloud, AWS, HTML; SHOULD: Mobile, Web, Angular, REST API; COULD: Android, Linux, PostgreSQL."
+},
+{
+"developer_id": "Dev_486",
+"reason": "MUST: Cloud, AWS, Docker, MySQL, SQL; SHOULD: Mobile, Web, Artificial Intelligence, Angular; COULD: IoT, Android, Linux."
+},
+{
+"developer_id": "Dev_679",
+"reason": "MUST: Cloud, AWS, Docker, MySQL, HTML; SHOULD: Mobile, Web, Artificial Intelligence, Angular; COULD: Django, PostgreSQL, TypeScript."
+},
+{
+"developer_id": "Dev_226",
+"reason": "MUST: Cloud, AWS, Docker, HTML; SHOULD: Mobile, Web, Angular, REST API; COULD: Android, Hugging Face Transformers, Rust."
+},
+{
+"developer_id": "Dev_290",
+"reason": "MUST: Cloud, AWS, Docker, SQL; SHOULD: Web, Artificial Intelligence, Angular, REST API; COULD: Android, Shell Script."
+},
+{
+"developer_id": "Dev_181",
+"reason": "MUST: Cloud, AWS, Docker, MySQL, SQL; SHOULD: Mobile, Web, Angular, AWS Lambda; COULD: Android, Linux, MQTT."
+},
+{
+"developer_id": "Dev_65",
+"reason": "MUST: Cloud, AWS, Docker, HTML; SHOULD: Mobile, Web, Angular, REST API; COULD: Android, Linux, C++."
+}
+],
+"must_coverage_summary": "6 of 6 MUST requirements covered: Cloud, AWS, Docker, MySQL, SQL, HTML.",
+"should_could_summary": "13 of 13 SHOULD requirements covered: Mobile, Web, Artificial Intelligence, Angular, AWS Lambda, REST API, Spring Boot, Windows, Java, JavaScript, Python, C, CSS. 12 of 12 COULD requirements covered: IoT, Android, Django, Hugging Face Transformers, Linux, MQTT, PostgreSQL, C++, Rust, Shell Script, Swift, TypeScript.",
+"collaboration_summary": "The graph shows prior collaboration for 21 of 21 member-pairs, with average edge weight 0.51; strongest observed links include Dev_290-Dev_181, Dev_181-Dev_65, and Dev_290-Dev_65.",
+"main_limitation": "No clear technical limitation identified from the supplied competency and collaboration data."
+}
+]
+}
