@@ -2,258 +2,814 @@
   "projects": [
     {
       "id": "P1",
-      "name": "Manutenção de Portal Corporativo .NET",
-      "description": "Portal interno corporativo em .NET, com partes Desktop Standalone e partes web, crítico para rotinas administrativas. Objetivo: corrigir bugs, melhorar performance e modernizar o front-end gradualmente sem interromper a operação.",
-      "team_size": 4,
+      "original_id": "P439",
+      "name": "Personal Print AI",
+      "description": "Projeto real Personal Print AI (id original P439), iniciado em 2025, com equipe real de 8 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Artificial Intelligence, Mobile, Cloud; ecossistemas/tecnologias React Native, Amazon Lex, AWS IoT Core; linguagens JavaScript, Python, TypeScript.",
+      "team_size": 8,
       "dominio": {
-        "must": ["Desktop Standalone", "Web"],
-        "should": ["Cloud"],
-        "could": ["Mobile"]
+        "must": [
+          "Artificial Intelligence",
+          "Mobile",
+          "Cloud"
+        ],
+        "should": [
+          "IoT"
+        ],
+        "could": []
       },
       "ecossistema": {
-        "must": [".NET"],
-        "should": ["React"],
-        "could": ["MongoDB"]
+        "must": [
+          "React Native"
+        ],
+        "should": [
+          "Amazon Lex",
+          "AWS IoT Core",
+          "Google Gemini",
+          "Node.js",
+          "Raspberry Pi"
+        ],
+        "could": [
+          "Amazon API Gateway",
+          "Amazon S3",
+          "AWS Lambda",
+          "LangChain",
+          "LLaMA",
+          "MQTT"
+        ]
       },
       "linguagens": {
-        "must": ["C#"],
-        "should": ["JavaScript", "TypeScript"],
-        "could": ["Python"]
-      }
+        "must": [
+          "JavaScript",
+          "Python",
+          "TypeScript"
+        ],
+        "should": [
+          "Java",
+          "PowerShell"
+        ],
+        "could": [
+          "Shell Script"
+        ]
+      },
+      "revised_id_before_filter": "P7"
     },
     {
       "id": "P2",
-      "name": "App Mobile Híbrido com Painel Web",
-      "description": "Aplicativo mobile para Android e iOS consumindo backend existente, com painel web simples para suporte. Foco em UX, boa comunicação entre plataformas e integração estável com o backend.",
-      "team_size": 4,
+      "original_id": "P440",
+      "name": "2025_PrintAI Anomaly Threat Detection and Remediation",
+      "description": "Projeto real 2025_PrintAI Anomaly Threat Detection and Remediation (id original P440), iniciado em 2025, com equipe real de 7 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios IoT, Web, Embedded Systems; ecossistemas/tecnologias Linux, Raspberry Pi, TensorFlow; linguagens Python, C, C++.",
+      "team_size": 7,
       "dominio": {
-        "must": ["Mobile"],
-        "should": ["Web"],
-        "could": ["Cloud"]
+        "must": [
+          "IoT",
+          "Web",
+          "Embedded Systems"
+        ],
+        "should": [
+          "Artificial Intelligence",
+          "Cloud"
+        ],
+        "could": [
+          "Extended Reality",
+          "Hardware",
+          "Mobile"
+        ]
       },
       "ecossistema": {
-        "must": ["Android", "iOS"],
-        "should": ["React"],
-        "could": [".NET"]
+        "must": [
+          "Linux",
+          "Raspberry Pi",
+          "TensorFlow"
+        ],
+        "should": [
+          "FastAPI",
+          "Windows",
+          "AWS",
+          "Docker",
+          "LLaMA"
+        ],
+        "could": [
+          "MQTT",
+          "Pandas",
+          "Bluetooth",
+          "Hugging Face Transformers",
+          "iOS",
+          "LangChain"
+        ]
       },
       "linguagens": {
-        "must": ["Kotlin", "Swift"],
-        "should": ["JavaScript", "TypeScript"],
-        "could": ["Java", "C#"]
-      }
+        "must": [
+          "Python",
+          "C",
+          "C++"
+        ],
+        "should": [
+          "CSS",
+          "Java",
+          "Bash",
+          "SQL",
+          "HTML"
+        ],
+        "could": [
+          "C#",
+          "Go",
+          "JavaScript",
+          "Kotlin",
+          "Rust"
+        ]
+      },
+      "revised_id_before_filter": "P8"
     },
     {
       "id": "P3",
-      "name": "Plataforma IoT de Sensoriamento em Nuvem",
-      "description": "Plataforma para coletar dados de sensores IoT, processar em nuvem e exibir em painel web. Foco em ingestão robusta, processamento em nuvem e visualização mínima porém funcional.",
-      "team_size": 4,
+      "original_id": "P441",
+      "name": "XControl",
+      "description": "Projeto real XControl (id original P441), iniciado em 2025, com equipe real de 5 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Cloud, Artificial Intelligence; ecossistemas/tecnologias Amazon ECS, Amazon S3, AWS Step Functions; linguagens Python, SQL.",
+      "team_size": 5,
       "dominio": {
-        "must": ["IoT", "Cloud"],
-        "should": ["Web"],
+        "must": [
+          "Cloud",
+          "Artificial Intelligence"
+        ],
+        "should": [],
         "could": []
       },
       "ecossistema": {
-        "must": ["AWS Lambda"],
-        "should": ["React", "Angular", "MongoDB"],
-        "could": ["Android"]
+        "must": [
+          "Amazon ECS",
+          "Amazon S3",
+          "AWS Step Functions"
+        ],
+        "should": [
+          "Amazon CloudWatch",
+          "PySpark",
+          "Amazon Athena",
+          "Amazon CloudFront",
+          "AWS Lambda"
+        ],
+        "could": [
+          "FastAPI",
+          "Metabase",
+          "MLflow",
+          "TensorFlow Recommenders",
+          "Amazon RDS",
+          "AWS Glue"
+        ]
       },
       "linguagens": {
-        "must": ["Python", "C++"],
-        "should": ["JavaScript"],
-        "could": ["Java", "TypeScript"]
-      }
+        "must": [
+          "Python",
+          "SQL"
+        ],
+        "should": [],
+        "could": []
+      },
+      "revised_id_before_filter": "P9"
     },
     {
       "id": "P4",
-      "name": "SaaS Web de Relatórios Analíticos",
-      "description": "Aplicação SaaS web para geração de dashboards e relatórios analíticos usando dados em MongoDB. Ênfase em consultas eficientes, boa modelagem e interface clara para visualização.",
-      "team_size": 4,
+      "original_id": "P442",
+      "name": "REVER",
+      "description": "Projeto real REVER (id original P442), iniciado em 2025, com equipe real de 7 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Cloud, Mobile, Web; ecossistemas/tecnologias AWS, Progressive Web App (PWA), Docker; linguagens Python, SQL, CSS.",
+      "team_size": 7,
       "dominio": {
-        "must": ["Web"],
-        "should": ["Cloud"],
-        "could": []
+        "must": [
+          "Cloud",
+          "Mobile",
+          "Web"
+        ],
+        "should": [
+          "Artificial Intelligence",
+          "Hardware"
+        ],
+        "could": [
+          "Embedded Systems"
+        ]
       },
       "ecossistema": {
-        "must": ["MongoDB"],
-        "should": ["Angular", "React"],
-        "could": ["AWS Lambda"]
+        "must": [
+          "AWS",
+          "Progressive Web App (PWA)",
+          "Docker"
+        ],
+        "should": [
+          "Android",
+          "Angular",
+          "Flask",
+          "iOS",
+          "Metabase"
+        ],
+        "could": [
+          "SCORM",
+          "TensorFlow",
+          "WebSocket",
+          "xAPI",
+          "EJS",
+          "HTTP"
+        ]
       },
       "linguagens": {
-        "must": ["JavaScript"],
-        "should": ["TypeScript", "Python"],
-        "could": ["Java", "C#"]
-      }
+        "must": [
+          "Python",
+          "SQL"
+        ],
+        "should": [
+          "CSS",
+          "HTML",
+          "Java",
+          "JavaScript"
+        ],
+        "could": [
+          "C",
+          "C#",
+          "Shell Script",
+          "TypeScript"
+        ]
+      },
+      "revised_id_before_filter": "P10"
     },
     {
       "id": "P5",
-      "name": "Plataforma Crítica Web+Cloud",
-      "description": "Sistema Web+Cloud crítico com front-end em React, backend serverless em AWS Lambda e banco MongoDB. Requer alta confiabilidade, testes, monitoramento e escalabilidade.",
-      "team_size": 4,
+      "original_id": "P443",
+      "name": "Pothole Detector",
+      "description": "Projeto real Pothole Detector (id original P443), iniciado em 2025, com equipe real de 8 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Web, Mobile, Artificial Intelligence; ecossistemas/tecnologias AWS, Android, Docker; linguagens Python, Java, SQL.",
+      "team_size": 8,
       "dominio": {
-        "must": ["Web", "Cloud"],
-        "should": ["Mobile"],
-        "could": []
+        "must": [
+          "Web",
+          "Mobile",
+          "Artificial Intelligence"
+        ],
+        "should": [
+          "Cloud",
+          "Desktop Standalone"
+        ],
+        "could": [
+          "E-commerce",
+          "Embedded Systems",
+          "Hardware"
+        ]
       },
       "ecossistema": {
-        "must": ["React", "AWS Lambda", "MongoDB"],
-        "should": [".NET"],
-        "could": ["Android"]
+        "must": [
+          "AWS",
+          "Android",
+          "Docker"
+        ],
+        "should": [
+          "Firebase",
+          "iOS",
+          "LLaMA",
+          "Ollama",
+          "Terraform"
+        ],
+        "could": [
+          "Angular",
+          "LangChain",
+          "React",
+          "Spring Boot",
+          "Windows",
+          "Amazon Bedrock"
+        ]
       },
       "linguagens": {
-        "must": ["JavaScript", "TypeScript", "Python"],
-        "should": ["C#", "Java"],
-        "could": ["Kotlin", "Swift"]
-      }
+        "must": [
+          "Python",
+          "Java",
+          "SQL"
+        ],
+        "should": [
+          "HTML",
+          "C",
+          "C++",
+          "CSS",
+          "JavaScript"
+        ],
+        "could": [
+          "Bash",
+          "C#",
+          "Go",
+          "Kotlin",
+          "Rust",
+          "TypeScript"
+        ]
+      },
+      "revised_id_before_filter": "P11"
     },
     {
       "id": "P6",
-      "name": "Plataforma Web de Gestão com IA e Integração CRM",
-      "description": "Sistema web com front-end React, backend ASP.NET Core e integração com CRM (Pipedrive) e modelos de IA para análise de dados. Inspirado no projeto CISOP do Virtus.",
+      "original_id": "P444",
+      "name": "GTQ",
+      "description": "Projeto real GTQ (id original P444), iniciado em 2025, com equipe real de 4 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Web, Cloud, Artificial Intelligence; ecossistemas/tecnologias Android, Docker, iOS; linguagens Python, Bash, C.",
       "team_size": 4,
       "dominio": {
-        "must": ["Web", "artificial intelligence"],
-        "should": ["Cloud"],
-        "could": ["Mobile"]
+        "must": [
+          "Web",
+          "Cloud"
+        ],
+        "should": [
+          "Artificial Intelligence",
+          "Hardware",
+          "Mobile"
+        ],
+        "could": []
       },
       "ecossistema": {
-        "must": ["React", "ASP.NET Core"],
-        "should": ["TensorFlow", "Docker"],
-        "could": ["PostgreSQL", "REST API"]
+        "must": [
+          "Android",
+          "Docker",
+          "iOS"
+        ],
+        "should": [
+          "REST API",
+          ".NET",
+          "AWS",
+          "Bluetooth",
+          "HMI"
+        ],
+        "could": [
+          "Kafka",
+          "Linux",
+          "Load Cells",
+          "Modbus",
+          "MQTT",
+          "NFC"
+        ]
       },
       "linguagens": {
-        "must": ["JavaScript", "C#"],
-        "should": ["Python"],
-        "could": ["SQL"]
-      }
+        "must": [
+          "Python"
+        ],
+        "should": [
+          "Bash",
+          "C",
+          "C#",
+          "HTML",
+          "Java"
+        ],
+        "could": [
+          "JavaScript",
+          "SQL"
+        ]
+      },
+      "revised_id_before_filter": "P12"
     },
-  
-
-  
     {
       "id": "P7",
-      "name": "Plataforma Web Angular + Spring Boot com IA Generativa",
-      "description": "Sistema web corporativo com front-end Angular, backend Spring Boot e integração com modelos de IA generativa (LLMs) para análise e automação de documentos. Inspirado nos projetos EPSON ADVANTAGES, SPICE e Vulnerability Smart Assistance do Virtus.",
-      "team_size": 4,
+      "original_id": "P445",
+      "name": "EnergySense",
+      "description": "Projeto real EnergySense (id original P445), iniciado em 2025, com equipe real de 6 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Mobile, Web, Artificial Intelligence; ecossistemas/tecnologias Android, iOS, AWS; linguagens C, C#, Java.",
+      "team_size": 6,
       "dominio": {
-        "must": ["Web", "artificial intelligence"],
-        "should": ["Cloud"],
-        "could": ["Mobile"]
+        "must": [
+          "Mobile",
+          "Web"
+        ],
+        "should": [
+          "Artificial Intelligence",
+          "Cloud",
+          "Embedded Systems"
+        ],
+        "could": []
       },
       "ecossistema": {
-        "must": ["Angular", "Spring Boot"],
-        "should": ["AWS Lambda", "LangChain"],
-        "could": ["Docker", "PostgreSQL"]
+        "must": [
+          "Android",
+          "iOS",
+          "AWS"
+        ],
+        "should": [
+          "Docker",
+          "MQTT",
+          ".NET",
+          "HTTP",
+          "React"
+        ],
+        "could": [
+          "Spring Boot",
+          "SQLite",
+          "Unity",
+          "Angular",
+          "Google Maps",
+          "JWT"
+        ]
       },
       "linguagens": {
-        "must": ["Java", "TypeScript"],
-        "should": ["Python"],
-        "could": ["SQL"]
-      }
+        "must": [
+          "C",
+          "C#",
+          "Java"
+        ],
+        "should": [
+          "Python",
+          "SQL",
+          "TypeScript",
+          "CSS",
+          "HTML"
+        ],
+        "could": [
+          "JavaScript",
+          "Rust",
+          "Swift",
+          "Go",
+          "Kotlin"
+        ]
+      },
+      "revised_id_before_filter": "P13"
     },
     {
       "id": "P8",
-      "name": "App Mobile IoT com Backend Cloud",
-      "description": "Aplicativo mobile para Android e iOS integrado a dispositivos IoT via BLE e MQTT, com backend serverless na AWS. Inspirado nos projetos DistributedSecAccess, IDSecAccess e Smart Security do Virtus.",
+      "original_id": "P447",
+      "name": "VRR Vulnerability Resolution and Recommendation",
+      "description": "Projeto real VRR Vulnerability Resolution and Recommendation (id original P447), iniciado em 2025, com equipe real de 4 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Artificial Intelligence, Web; ecossistemas/tecnologias FastAPI, Microsoft SQL Server, Next.js; linguagens Python, JavaScript, SQL.",
       "team_size": 4,
       "dominio": {
-        "must": ["Mobile", "IoT"],
-        "should": ["Cloud"],
-        "could": ["Web"]
+        "must": [
+          "Artificial Intelligence",
+          "Web"
+        ],
+        "should": [],
+        "could": []
       },
       "ecossistema": {
-        "must": ["Android", "iOS"],
-        "should": ["AWS Lambda", "Bluetooth Low Energy"],
-        "could": ["REST API", "MQTT"]
+        "must": [
+          "FastAPI",
+          "Microsoft SQL Server",
+          "Next.js"
+        ],
+        "should": [
+          "Pandas",
+          "Recharts",
+          "scikit-learn",
+          "XGBoost",
+          "JWT"
+        ],
+        "could": [
+          "NumPy",
+          "Ollama",
+          "PyTorch",
+          "REST API"
+        ]
       },
       "linguagens": {
-        "must": ["Kotlin", "Swift"],
-        "should": ["Java"],
-        "could": ["Python"]
-      }
+        "must": [
+          "Python",
+          "JavaScript",
+          "SQL"
+        ],
+        "should": [],
+        "could": []
+      },
+      "revised_id_before_filter": "P15"
     },
     {
       "id": "P9",
-      "name": "Plataforma Cloud de Processamento de Documentos com IA",
-      "description": "Pipeline serverless na AWS para ingestão, extração e análise inteligente de documentos usando LLMs e serviços gerenciados. Inspirado nos projetos Document Analyzer, XControl-AI e IA TEAMS do Virtus.",
+      "original_id": "P449",
+      "name": "EGRID",
+      "description": "Projeto real EGRID (id original P449), iniciado em 2025, com equipe real de 4 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Cloud, Mobile, Web; ecossistemas/tecnologias Angular, AWS, Docker; linguagens CSS, C, HTML.",
       "team_size": 4,
       "dominio": {
-        "must": ["artificial intelligence", "Cloud"],
-        "should": ["Web"],
-        "could": ["Mobile"]
+        "must": [
+          "Cloud",
+          "Mobile",
+          "Web"
+        ],
+        "should": [
+          "Hardware",
+          "SCADA"
+        ],
+        "could": []
       },
       "ecossistema": {
-        "must": ["AWS Lambda", "Amazon Bedrock"],
-        "should": ["LangChain", "Docker"],
-        "could": ["Angular", "Amazon S3"]
+        "must": [
+          "Angular",
+          "AWS",
+          "Docker"
+        ],
+        "should": [
+          "React",
+          "Android",
+          "REST API",
+          "Spring Boot",
+          "Amazon Cognito"
+        ],
+        "could": [
+          "Amazon DynamoDB",
+          "Amazon Polly",
+          "HTTP",
+          "Ionic",
+          "iOS",
+          "Linux"
+        ]
       },
       "linguagens": {
-        "must": ["Python"],
-        "should": ["TypeScript", "Java"],
-        "could": ["SQL"]
-      }
+        "must": [
+          "CSS",
+          "C",
+          "HTML"
+        ],
+        "should": [
+          "Java",
+          "JavaScript",
+          "Python",
+          "SQL",
+          "TypeScript"
+        ],
+        "could": [
+          "Rust"
+        ]
+      },
+      "revised_id_before_filter": "P17"
     },
     {
       "id": "P10",
-      "name": "SaaS Web de Rastreamento e Gestão com Angular",
-      "description": "Plataforma SaaS web para rastreamento de ativos, gestão de usuários e relatórios, com front-end Angular, backend Spring Boot e banco relacional. Inspirado nos projetos Rastreamento de Ativos Fixos, SMART CABLE e LMS do Virtus.",
-      "team_size": 4,
+      "original_id": "P453",
+      "name": "2025_RedePatas",
+      "description": "Projeto real 2025_RedePatas (id original P453), iniciado em 2025, com equipe real de 5 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Mobile, Artificial Intelligence, Cloud; ecossistemas/tecnologias Docker, REST API, Windows; linguagens Python, C, C++.",
+      "team_size": 5,
       "dominio": {
-        "must": ["Web"],
-        "should": ["Cloud"],
-        "could": ["Mobile"]
+        "must": [
+          "Mobile"
+        ],
+        "should": [
+          "Artificial Intelligence",
+          "Cloud"
+        ],
+        "could": [
+          "Desktop Standalone",
+          "Embedded Systems",
+          "Extended Reality",
+          "Hardware",
+          "IoT",
+          "Web"
+        ]
       },
       "ecossistema": {
-        "must": ["Angular", "Spring Boot"],
-        "should": ["PostgreSQL", "Docker"],
-        "could": ["AWS", "REST API"]
+        "must": [
+          "Docker",
+          "REST API",
+          "Windows"
+        ],
+        "should": [
+          "AWS",
+          "FastAPI",
+          "Flask",
+          "HTTP",
+          "MongoDB"
+        ],
+        "could": [
+          "Progressive Web App (PWA)",
+          "React",
+          "SAP",
+          "Windows Service",
+          ".NET",
+          "Amazon DynamoDB"
+        ]
       },
       "linguagens": {
-        "must": ["TypeScript", "Java"],
-        "should": ["JavaScript", "SQL"],
-        "could": ["Python"]
-      }
+        "must": [
+          "Python"
+        ],
+        "should": [
+          "C",
+          "C++",
+          "CSS",
+          "SQL"
+        ],
+        "could": [
+          "C#",
+          "Go"
+        ]
+      },
+      "revised_id_before_filter": "P21"
     },
     {
       "id": "P11",
-      "name": "App Mobile React Native com IA e Cloud AWS",
-      "description": "Aplicativo mobile multiplataforma em React Native com IA embarcada, integração a serviços AWS e backend em Node.js. Inspirado nos projetos POS Companion App, Personal Print AI e AI Engagement do Virtus.",
-      "team_size": 4,
+      "original_id": "P454",
+      "name": "AITeams",
+      "description": "Projeto real AITeams (id original P454), iniciado em 2025, com equipe real de 8 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Artificial Intelligence, Cloud, Web; ecossistemas/tecnologias AWS, Amazon Kendra, Amazon Bedrock; linguagens SQL, Java, Python.",
+      "team_size": 8,
       "dominio": {
-        "must": ["Mobile", "artificial intelligence"],
-        "should": ["Cloud"],
-        "could": ["IoT"]
+        "must": [
+          "Artificial Intelligence",
+          "Cloud"
+        ],
+        "should": [
+          "Web"
+        ],
+        "could": []
       },
       "ecossistema": {
-        "must": ["React Native", "AWS"],
-        "should": ["Node.js", "Spring Boot"],
-        "could": ["Android", "iOS"]
+        "must": [
+          "AWS",
+          "Amazon Kendra",
+          "Amazon Bedrock"
+        ],
+        "should": [
+          "REST API",
+          "AWS Glue"
+        ],
+        "could": [
+          "Microsoft SharePoint",
+          "Microsoft SQL Server",
+          "Snowflake",
+          "Angular",
+          "Azure OpenAI",
+          "Docker"
+        ]
       },
       "linguagens": {
-        "must": ["TypeScript", "JavaScript"],
-        "should": ["Python", "Java"],
-        "could": ["Kotlin", "Swift"]
-      }
+        "must": [
+          "SQL"
+        ],
+        "should": [
+          "Java",
+          "Python"
+        ],
+        "could": [
+          "TypeScript",
+          "HTML",
+          "SCSS"
+        ]
+      },
+      "revised_id_before_filter": "P22"
     },
     {
       "id": "P12",
-      "name": "Plataforma IoT Industrial com Integração Web",
-      "description": "Plataforma para integração de dispositivos industriais via protocolos IoT (MQTT, Modbus), orquestração com Node-RED e painel web para monitoramento em tempo real. Inspirado nos projetos MultiHub-IoT e IoT Interoperability do Virtus.",
-      "team_size": 4,
+      "original_id": "P455",
+      "name": "InsPOS",
+      "description": "Projeto real InsPOS (id original P455), iniciado em 2025, com equipe real de 8 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Cloud, Web, IoT; ecossistemas/tecnologias Docker, Moonraker, AWS; linguagens Java, C, CSS.",
+      "team_size": 8,
       "dominio": {
-        "must": ["IoT", "Web"],
-        "should": ["Cloud"],
-        "could": ["artificial intelligence"]
+        "must": [
+          "Cloud",
+          "Web"
+        ],
+        "should": [
+          "IoT",
+          "Artificial Intelligence",
+          "Mobile"
+        ],
+        "could": [
+          "Embedded Systems",
+          "Extended Reality",
+          "Hardware"
+        ]
       },
       "ecossistema": {
-        "must": ["MQTT", "Node-RED"],
-        "should": ["Angular", "Spring Boot"],
-        "could": ["REST API", "Docker"]
+        "must": [
+          "Docker"
+        ],
+        "should": [
+          "Moonraker",
+          "AWS",
+          "GPIO",
+          "HTTP",
+          "MQTT"
+        ],
+        "could": [
+          "OpenCV",
+          "Raspberry Pi",
+          "React",
+          "REST API",
+          "Unity",
+          "WebSocket"
+        ]
       },
       "linguagens": {
-        "must": ["Java"],
-        "should": ["TypeScript", "Python"],
-        "could": ["SQL"]
-      }
+        "must": [
+          "Java"
+        ],
+        "should": [
+          "C",
+          "CSS",
+          "Python"
+        ],
+        "could": [
+          "Bash",
+          "C#",
+          "Go",
+          "JavaScript",
+          "Lua",
+          "SQL"
+        ]
+      },
+      "revised_id_before_filter": "P23"
+    },
+    {
+      "id": "P13",
+      "original_id": "P457",
+      "name": "NeuromemIC",
+      "description": "Projeto real NeuromemIC (id original P457), iniciado em 2025, com equipe real de 9 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Hardware, Web, Artificial Intelligence; ecossistemas/tecnologias NumPy, Linux, TLS; linguagens C, Python, C++.",
+      "team_size": 9,
+      "dominio": {
+        "must": [
+          "Hardware"
+        ],
+        "should": [
+          "Web",
+          "Artificial Intelligence"
+        ],
+        "could": [
+          "Embedded Systems"
+        ]
+      },
+      "ecossistema": {
+        "must": [
+          "NumPy"
+        ],
+        "should": [
+          "Linux",
+          "TLS"
+        ],
+        "could": [
+          "AWS",
+          "Docker",
+          "Angular",
+          "HMI",
+          "Hugging Face Transformers",
+          "Progressive Web App (PWA)"
+        ]
+      },
+      "linguagens": {
+        "must": [
+          "C",
+          "Python"
+        ],
+        "should": [
+          "C++",
+          "HTML"
+        ],
+        "could": [
+          "CSS",
+          "Bash",
+          "MATLAB"
+        ]
+      },
+      "revised_id_before_filter": "P25"
+    },
+    {
+      "id": "P14",
+      "original_id": "P467",
+      "name": "LT-IA",
+      "description": "Projeto real LT-IA (id original P467), iniciado em 2025, com equipe real de 7 participante(s). Perfil técnico revisado com base na taxonomia, considerando domínios Cloud, Mobile, Web; ecossistemas/tecnologias AWS, Docker, MySQL; linguagens SQL, HTML, Java.",
+      "team_size": 7,
+      "dominio": {
+        "must": [
+          "Cloud"
+        ],
+        "should": [
+          "Mobile",
+          "Web",
+          "Artificial Intelligence"
+        ],
+        "could": [
+          "IoT"
+        ]
+      },
+      "ecossistema": {
+        "must": [
+          "AWS",
+          "Docker",
+          "MySQL"
+        ],
+        "should": [
+          "Angular",
+          "AWS Lambda",
+          "REST API",
+          "Spring Boot",
+          "Windows"
+        ],
+        "could": [
+          "Android",
+          "Django",
+          "Hugging Face Transformers",
+          "Linux",
+          "MQTT",
+          "PostgreSQL"
+        ]
+      },
+      "linguagens": {
+        "must": [
+          "SQL",
+          "HTML"
+        ],
+        "should": [
+          "Java",
+          "JavaScript",
+          "Python",
+          "C",
+          "CSS"
+        ],
+        "could": [
+          "C++",
+          "Rust",
+          "Shell Script",
+          "Swift",
+          "TypeScript"
+        ]
+      },
+      "revised_id_before_filter": "P35"
     }
   ]
 }
