@@ -1,0 +1,259 @@
+{
+  "projects": [
+    {
+      "id": "P1",
+      "name": "Manutenção de Portal Corporativo .NET",
+      "description": "Portal interno corporativo em .NET, com partes Desktop Standalone e partes web, crítico para rotinas administrativas. Objetivo: corrigir bugs, melhorar performance e modernizar o front-end gradualmente sem interromper a operação.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Desktop Standalone", "Web"],
+        "should": ["Cloud"],
+        "could": ["Mobile"]
+      },
+      "ecossistema": {
+        "must": [".NET"],
+        "should": ["React"],
+        "could": ["MongoDB"]
+      },
+      "linguagens": {
+        "must": ["C#"],
+        "should": ["JavaScript", "TypeScript"],
+        "could": ["Python"]
+      }
+    },
+    {
+      "id": "P2",
+      "name": "App Mobile Híbrido com Painel Web",
+      "description": "Aplicativo mobile para Android e iOS consumindo backend existente, com painel web simples para suporte. Foco em UX, boa comunicação entre plataformas e integração estável com o backend.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Mobile"],
+        "should": ["Web"],
+        "could": ["Cloud"]
+      },
+      "ecossistema": {
+        "must": ["Android", "iOS"],
+        "should": ["React"],
+        "could": [".NET"]
+      },
+      "linguagens": {
+        "must": ["Kotlin", "Swift"],
+        "should": ["JavaScript", "TypeScript"],
+        "could": ["Java", "C#"]
+      }
+    },
+    {
+      "id": "P3",
+      "name": "Plataforma IoT de Sensoriamento em Nuvem",
+      "description": "Plataforma para coletar dados de sensores IoT, processar em nuvem e exibir em painel web. Foco em ingestão robusta, processamento em nuvem e visualização mínima porém funcional.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["IoT", "Cloud"],
+        "should": ["Web"],
+        "could": []
+      },
+      "ecossistema": {
+        "must": ["AWS Lambda"],
+        "should": ["React", "Angular", "MongoDB"],
+        "could": ["Android"]
+      },
+      "linguagens": {
+        "must": ["Python", "C++"],
+        "should": ["JavaScript"],
+        "could": ["Java", "TypeScript"]
+      }
+    },
+    {
+      "id": "P4",
+      "name": "SaaS Web de Relatórios Analíticos",
+      "description": "Aplicação SaaS web para geração de dashboards e relatórios analíticos usando dados em MongoDB. Ênfase em consultas eficientes, boa modelagem e interface clara para visualização.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Web"],
+        "should": ["Cloud"],
+        "could": []
+      },
+      "ecossistema": {
+        "must": ["MongoDB"],
+        "should": ["Angular", "React"],
+        "could": ["AWS Lambda"]
+      },
+      "linguagens": {
+        "must": ["JavaScript"],
+        "should": ["TypeScript", "Python"],
+        "could": ["Java", "C#"]
+      }
+    },
+    {
+      "id": "P5",
+      "name": "Plataforma Crítica Web+Cloud",
+      "description": "Sistema Web+Cloud crítico com front-end em React, backend serverless em AWS Lambda e banco MongoDB. Requer alta confiabilidade, testes, monitoramento e escalabilidade.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Web", "Cloud"],
+        "should": ["Mobile"],
+        "could": []
+      },
+      "ecossistema": {
+        "must": ["React", "AWS Lambda", "MongoDB"],
+        "should": [".NET"],
+        "could": ["Android"]
+      },
+      "linguagens": {
+        "must": ["JavaScript", "TypeScript", "Python"],
+        "should": ["C#", "Java"],
+        "could": ["Kotlin", "Swift"]
+      }
+    },
+    {
+      "id": "P6",
+      "name": "Plataforma Web de Gestão com IA e Integração CRM",
+      "description": "Sistema web com front-end React, backend ASP.NET Core e integração com CRM (Pipedrive) e modelos de IA para análise de dados. Inspirado no projeto CISOP do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Web", "artificial intelligence"],
+        "should": ["Cloud"],
+        "could": ["Mobile"]
+      },
+      "ecossistema": {
+        "must": ["React", "ASP.NET Core"],
+        "should": ["TensorFlow", "Docker"],
+        "could": ["PostgreSQL", "REST API"]
+      },
+      "linguagens": {
+        "must": ["JavaScript", "C#"],
+        "should": ["Python"],
+        "could": ["SQL"]
+      }
+    },
+  
+
+  
+    {
+      "id": "P7",
+      "name": "Plataforma Web Angular + Spring Boot com IA Generativa",
+      "description": "Sistema web corporativo com front-end Angular, backend Spring Boot e integração com modelos de IA generativa (LLMs) para análise e automação de documentos. Inspirado nos projetos EPSON ADVANTAGES, SPICE e Vulnerability Smart Assistance do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Web", "artificial intelligence"],
+        "should": ["Cloud"],
+        "could": ["Mobile"]
+      },
+      "ecossistema": {
+        "must": ["Angular", "Spring Boot"],
+        "should": ["AWS Lambda", "LangChain"],
+        "could": ["Docker", "PostgreSQL"]
+      },
+      "linguagens": {
+        "must": ["Java", "TypeScript"],
+        "should": ["Python"],
+        "could": ["SQL"]
+      }
+    },
+    {
+      "id": "P8",
+      "name": "App Mobile IoT com Backend Cloud",
+      "description": "Aplicativo mobile para Android e iOS integrado a dispositivos IoT via BLE e MQTT, com backend serverless na AWS. Inspirado nos projetos DistributedSecAccess, IDSecAccess e Smart Security do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Mobile", "IoT"],
+        "should": ["Cloud"],
+        "could": ["Web"]
+      },
+      "ecossistema": {
+        "must": ["Android", "iOS"],
+        "should": ["AWS Lambda", "Bluetooth Low Energy"],
+        "could": ["REST API", "MQTT"]
+      },
+      "linguagens": {
+        "must": ["Kotlin", "Swift"],
+        "should": ["Java"],
+        "could": ["Python"]
+      }
+    },
+    {
+      "id": "P9",
+      "name": "Plataforma Cloud de Processamento de Documentos com IA",
+      "description": "Pipeline serverless na AWS para ingestão, extração e análise inteligente de documentos usando LLMs e serviços gerenciados. Inspirado nos projetos Document Analyzer, XControl-AI e IA TEAMS do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["artificial intelligence", "Cloud"],
+        "should": ["Web"],
+        "could": ["Mobile"]
+      },
+      "ecossistema": {
+        "must": ["AWS Lambda", "Amazon Bedrock"],
+        "should": ["LangChain", "Docker"],
+        "could": ["Angular", "Amazon S3"]
+      },
+      "linguagens": {
+        "must": ["Python"],
+        "should": ["TypeScript", "Java"],
+        "could": ["SQL"]
+      }
+    },
+    {
+      "id": "P10",
+      "name": "SaaS Web de Rastreamento e Gestão com Angular",
+      "description": "Plataforma SaaS web para rastreamento de ativos, gestão de usuários e relatórios, com front-end Angular, backend Spring Boot e banco relacional. Inspirado nos projetos Rastreamento de Ativos Fixos, SMART CABLE e LMS do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Web"],
+        "should": ["Cloud"],
+        "could": ["Mobile"]
+      },
+      "ecossistema": {
+        "must": ["Angular", "Spring Boot"],
+        "should": ["PostgreSQL", "Docker"],
+        "could": ["AWS", "REST API"]
+      },
+      "linguagens": {
+        "must": ["TypeScript", "Java"],
+        "should": ["JavaScript", "SQL"],
+        "could": ["Python"]
+      }
+    },
+    {
+      "id": "P11",
+      "name": "App Mobile React Native com IA e Cloud AWS",
+      "description": "Aplicativo mobile multiplataforma em React Native com IA embarcada, integração a serviços AWS e backend em Node.js. Inspirado nos projetos POS Companion App, Personal Print AI e AI Engagement do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["Mobile", "artificial intelligence"],
+        "should": ["Cloud"],
+        "could": ["IoT"]
+      },
+      "ecossistema": {
+        "must": ["React Native", "AWS"],
+        "should": ["Node.js", "Spring Boot"],
+        "could": ["Android", "iOS"]
+      },
+      "linguagens": {
+        "must": ["TypeScript", "JavaScript"],
+        "should": ["Python", "Java"],
+        "could": ["Kotlin", "Swift"]
+      }
+    },
+    {
+      "id": "P12",
+      "name": "Plataforma IoT Industrial com Integração Web",
+      "description": "Plataforma para integração de dispositivos industriais via protocolos IoT (MQTT, Modbus), orquestração com Node-RED e painel web para monitoramento em tempo real. Inspirado nos projetos MultiHub-IoT e IoT Interoperability do Virtus.",
+      "team_size": 4,
+      "dominio": {
+        "must": ["IoT", "Web"],
+        "should": ["Cloud"],
+        "could": ["artificial intelligence"]
+      },
+      "ecossistema": {
+        "must": ["MQTT", "Node-RED"],
+        "should": ["Angular", "Spring Boot"],
+        "could": ["REST API", "Docker"]
+      },
+      "linguagens": {
+        "must": ["Java"],
+        "should": ["TypeScript", "Python"],
+        "could": ["SQL"]
+      }
+    }
+  ]
+}
