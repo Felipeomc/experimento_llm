@@ -1,0 +1,334 @@
+{
+  "source_file": "resposta_llm.txt",
+  "llm_elapsed_text": "6m 47s",
+  "llm_elapsed_seconds": 407,
+  "raw_response_json": {
+    "model_reasoning_summary": "Priorizei cobertura completa dos requisitos MUST, usei SHOULD e COULD como complemento técnico e considerei o grafo para preferir equipes com colaboração prévia, evitando redundância excessiva quando ela não agregava cobertura.",
+    "recommendations": [
+      {
+        "project_id": "P1",
+        "project_name": "Manutenção de Portal Corporativo .NET",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_211",
+            "reason": "Cobre Desktop Standalone, Web, .NET e C#, além de Cloud e React, sendo o principal perfil para a sustentação .NET."
+          },
+          {
+            "developer_id": "Dev_81",
+            "reason": "Reforça Web e .NET, cobre React, JavaScript, TypeScript e MongoDB, útil para modernização gradual do front-end."
+          },
+          {
+            "developer_id": "Dev_145",
+            "reason": "Complementa Cloud, React, TypeScript, Mobile e Python, ampliando cobertura sem repetir apenas o núcleo .NET."
+          },
+          {
+            "developer_id": "Dev_202",
+            "reason": "Reforça Web, Cloud, JavaScript e TypeScript, apoiando evolução front-end e integração com o portal."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Desktop Standalone, Web, .NET e C#.",
+        "should_could_summary": "SHOULD cobertos: Cloud, React, JavaScript e TypeScript. COULD cobertos: Mobile, MongoDB e Python.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; há evidência mais forte entre Dev_81 e Dev_145, além de ligações adicionais entre os demais membros.",
+        "main_limitation": "Desktop Standalone e C# ficam mais concentrados em Dev_211; a equipe depende desse perfil para a parte legada principal."
+      },
+      {
+        "project_id": "P2",
+        "project_name": "App Mobile Híbrido com Painel Web",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_490",
+            "reason": "Cobre Mobile, Android, iOS e Kotlin, com apoio em React, .NET, Java e C#."
+          },
+          {
+            "developer_id": "Dev_480",
+            "reason": "Cobre Mobile, Android, iOS e Swift, complementando Dev_490 no eixo iOS nativo."
+          },
+          {
+            "developer_id": "Dev_311",
+            "reason": "Adiciona JavaScript e TypeScript, úteis para painel web e integração entre app e backend."
+          },
+          {
+            "developer_id": "Dev_174",
+            "reason": "Reforça Android, iOS, React, Cloud e Java, reduzindo risco de lacunas na integração mobile-web."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Mobile, Android, iOS, Kotlin e Swift.",
+        "should_could_summary": "SHOULD cobertos: Web, React, JavaScript e TypeScript. COULD cobertos: Cloud, .NET, Java e C#.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo, com ligação mais forte entre Dev_490 e Dev_311 e colaboração adicional entre os demais pares.",
+        "main_limitation": "Kotlin e Swift estão distribuídos em perfis específicos; a equipe deve evitar isolar implementação Android e iOS em uma única pessoa por plataforma."
+      },
+      {
+        "project_id": "P3",
+        "project_name": "Plataforma IoT de Sensoriamento em Nuvem",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_465",
+            "reason": "Cobre IoT, Python e C++, além de React, MongoDB, Android, Java e TypeScript."
+          },
+          {
+            "developer_id": "Dev_638",
+            "reason": "Cobre Cloud, AWS Lambda e Python, além de Angular, JavaScript e Java."
+          },
+          {
+            "developer_id": "Dev_496",
+            "reason": "Reforça IoT, Cloud e Python, sustentando o backend e processamento em nuvem."
+          },
+          {
+            "developer_id": "Dev_466",
+            "reason": "Complementa IoT, Cloud, Web, React, JavaScript, Android e Java."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: IoT, Cloud, AWS Lambda, Python e C++.",
+        "should_could_summary": "SHOULD cobertos: Web, React, Angular, MongoDB e JavaScript. COULD cobertos: Android, Java e TypeScript.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; há evidência forte entre Dev_465 e Dev_496, Dev_496 e Dev_466, e também boa ligação entre Dev_638 e Dev_496.",
+        "main_limitation": "C++ aparece principalmente em Dev_465; esse ponto deve ser monitorado se o projeto exigir muita implementação embarcada."
+      },
+      {
+        "project_id": "P4",
+        "project_name": "SaaS Web de Relatórios Analíticos",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_503",
+            "reason": "Cobre Web, Cloud, AWS Lambda, JavaScript, TypeScript e Python, ajudando na camada SaaS e backend."
+          },
+          {
+            "developer_id": "Dev_359",
+            "reason": "Reforça Web, Cloud, JavaScript, TypeScript e Python, com apoio em Java."
+          },
+          {
+            "developer_id": "Dev_492",
+            "reason": "Cobre Web, MongoDB, Angular, React e Python, sendo central para modelagem e camada de dados."
+          },
+          {
+            "developer_id": "Dev_351",
+            "reason": "Cobre Web, JavaScript, React, Python, Java e C#, fortalecendo front-end e integrações."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Web, MongoDB e JavaScript.",
+        "should_could_summary": "SHOULD cobertos: Cloud, Angular, React, TypeScript e Python. COULD cobertos: AWS Lambda, Java e C#.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; a maior evidência aparece entre Dev_503 e Dev_492, com ligações adicionais entre todos os demais pares.",
+        "main_limitation": "MongoDB fica concentrado em Dev_492; recomenda-se distribuir conhecimento de modelagem de dados durante o projeto."
+      },
+      {
+        "project_id": "P5",
+        "project_name": "Plataforma Crítica Web+Cloud",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_65",
+            "reason": "Cobre Web, Cloud, React, MongoDB, TypeScript e Python, além de Mobile, C#, Java, Android e Swift."
+          },
+          {
+            "developer_id": "Dev_181",
+            "reason": "Cobre Web, Cloud, AWS Lambda, MongoDB e Python, fortalecendo backend serverless e persistência."
+          },
+          {
+            "developer_id": "Dev_351",
+            "reason": "Cobre Web, React, JavaScript, Python, .NET, C# e Java, apoiando front-end e integrações."
+          },
+          {
+            "developer_id": "Dev_631",
+            "reason": "Cobre Web, React, JavaScript, TypeScript, Mobile, Java, Android, Kotlin e Swift."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Web, Cloud, React, AWS Lambda, MongoDB, JavaScript, TypeScript e Python.",
+        "should_could_summary": "SHOULD cobertos: Mobile, .NET, C# e Java. COULD cobertos: Android, Kotlin e Swift.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; o par Dev_65 e Dev_181 tem evidência mais forte, com colaboração adicional entre todos os demais membros.",
+        "main_limitation": "AWS Lambda está mais concentrado em Dev_181; para um sistema crítico, é prudente parear esse conhecimento com outro membro no início."
+      },
+      {
+        "project_id": "P6",
+        "project_name": "Plataforma Web de Gestão com IA e Integração CRM",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_205",
+            "reason": "Cobre Web, IA, React, ASP.NET Core, JavaScript e C#, além de Cloud, Docker, Python, Mobile, REST API e SQL."
+          },
+          {
+            "developer_id": "Dev_81",
+            "reason": "Reforça Web, ASP.NET Core, React, JavaScript, Cloud, Docker, PostgreSQL, REST API e SQL."
+          },
+          {
+            "developer_id": "Dev_214",
+            "reason": "Complementa Web, React, C#, Cloud, Docker e REST API, reforçando backend e integração."
+          },
+          {
+            "developer_id": "Dev_145",
+            "reason": "Cobre Cloud, React, TensorFlow, Docker, Python, Mobile, REST API e SQL, trazendo apoio direto para IA."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Web, artificial intelligence, React, ASP.NET Core, JavaScript e C#.",
+        "should_could_summary": "SHOULD cobertos: Cloud, TensorFlow, Docker e Python. COULD cobertos: Mobile, PostgreSQL, REST API e SQL.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; há evidência forte entre Dev_81 e Dev_214, Dev_81 e Dev_145, e Dev_214 e Dev_145.",
+        "main_limitation": "O requisito de IA no MUST aparece principalmente em Dev_205, enquanto TensorFlow e Python ficam mais fortes em Dev_145; esses dois perfis devem trabalhar próximos."
+      },
+      {
+        "project_id": "P7",
+        "project_name": "Plataforma Web Angular + Spring Boot com IA Generativa",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_503",
+            "reason": "Cobre Web, IA, Angular, Spring Boot, Java, TypeScript, Cloud, AWS Lambda, Python, Mobile e Docker."
+          },
+          {
+            "developer_id": "Dev_357",
+            "reason": "Reforça Web, IA, Angular, Spring Boot, Java e TypeScript, além de Cloud, Python, Mobile e SQL."
+          },
+          {
+            "developer_id": "Dev_359",
+            "reason": "Reforça Web, IA, Angular, Spring Boot, Java, TypeScript, Cloud, Python e Mobile."
+          },
+          {
+            "developer_id": "Dev_326",
+            "reason": "Complementa Spring Boot, Java, IA, Web, Cloud, LangChain, Python, Docker, PostgreSQL e SQL."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Web, artificial intelligence, Angular, Spring Boot, Java e TypeScript.",
+        "should_could_summary": "SHOULD cobertos: Cloud, AWS Lambda, LangChain e Python. COULD cobertos: Mobile, Docker, PostgreSQL e SQL.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo, com evidência consistente entre Dev_503, Dev_357 e Dev_359, além de ligações com Dev_326.",
+        "main_limitation": "LangChain fica concentrado em Dev_326 e AWS Lambda em Dev_503; são pontos de especialização que devem ser compartilhados."
+      },
+      {
+        "project_id": "P8",
+        "project_name": "App Mobile IoT com Backend Cloud",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_367",
+            "reason": "Cobre Mobile, IoT, Android, iOS, Swift, Cloud, AWS Lambda, Java, Web e MQTT."
+          },
+          {
+            "developer_id": "Dev_356",
+            "reason": "Cobre Mobile, IoT, Android, iOS, Swift, Cloud, Bluetooth Low Energy, REST API, MQTT e Python."
+          },
+          {
+            "developer_id": "Dev_198",
+            "reason": "Cobre Mobile, IoT, Android, iOS, Kotlin, Cloud e Bluetooth Low Energy."
+          },
+          {
+            "developer_id": "Dev_269",
+            "reason": "Reforça Mobile, Android, iOS, Cloud, Java, Web e REST API."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Mobile, IoT, Android, iOS, Kotlin e Swift.",
+        "should_could_summary": "SHOULD cobertos: Cloud, AWS Lambda, Bluetooth Low Energy e Java. COULD cobertos: Web, REST API, MQTT e Python.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; a ligação mais forte é entre Dev_198 e Dev_269, e os demais pares também apresentam evidência consistente.",
+        "main_limitation": "AWS Lambda aparece principalmente em Dev_367; o restante da equipe cobre bem mobile e IoT, mas o backend cloud deve ter pareamento técnico."
+      },
+      {
+        "project_id": "P9",
+        "project_name": "Plataforma Cloud de Processamento de Documentos com IA",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_638",
+            "reason": "Cobre IA, Cloud, AWS Lambda, Amazon Bedrock, Python, Web, Docker, Java, Angular, Amazon S3 e SQL."
+          },
+          {
+            "developer_id": "Dev_496",
+            "reason": "Reforça IA, Cloud e Python, além de LangChain, Docker e Java."
+          },
+          {
+            "developer_id": "Dev_582",
+            "reason": "Complementa IA, Cloud, Web, TypeScript, Java, Mobile, Angular e SQL."
+          },
+          {
+            "developer_id": "Dev_466",
+            "reason": "Reforça IA, Cloud, Web, Docker, Java e Mobile, ampliando robustez da equipe."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: artificial intelligence, Cloud, AWS Lambda, Amazon Bedrock e Python.",
+        "should_could_summary": "SHOULD cobertos: Web, LangChain, Docker, TypeScript e Java. COULD cobertos: Mobile, Angular, Amazon S3 e SQL.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo, com evidência muito forte entre Dev_496, Dev_582 e Dev_466, além de boa ligação com Dev_638.",
+        "main_limitation": "Amazon Bedrock e AWS Lambda ficam principalmente em Dev_638; esse conhecimento deve ser compartilhado cedo por ser central ao pipeline."
+      },
+      {
+        "project_id": "P10",
+        "project_name": "SaaS Web de Rastreamento e Gestão com Angular",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_308",
+            "reason": "Cobre Web, Angular, Spring Boot, TypeScript, Java, Cloud, PostgreSQL, Docker, JavaScript, SQL, AWS e REST API."
+          },
+          {
+            "developer_id": "Dev_357",
+            "reason": "Reforça Web, Angular, Spring Boot, TypeScript, Java, Cloud, JavaScript, SQL, AWS, REST API e Python."
+          },
+          {
+            "developer_id": "Dev_503",
+            "reason": "Reforça Web, Angular, Spring Boot, TypeScript, Java, Cloud, Docker, JavaScript, AWS e Python."
+          },
+          {
+            "developer_id": "Dev_359",
+            "reason": "Reforça Web, Angular, Spring Boot, TypeScript, Java, Cloud, JavaScript, AWS e Python."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Web, Angular, Spring Boot, TypeScript e Java.",
+        "should_could_summary": "SHOULD cobertos: Cloud, PostgreSQL, Docker, JavaScript e SQL. COULD cobertos: Mobile, AWS, REST API e Python.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; a equipe apresenta evidência consistente, especialmente nos pares envolvendo Dev_357, Dev_503 e Dev_359.",
+        "main_limitation": "A equipe é tecnicamente forte, mas há alta sobreposição em Angular/Spring Boot; a redundância é aceitável, porém deve ser compensada com divisão clara de responsabilidades."
+      },
+      {
+        "project_id": "P11",
+        "project_name": "App Mobile React Native com IA e Cloud AWS",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_359",
+            "reason": "Cobre Mobile, IA, AWS, TypeScript, JavaScript, Cloud, Spring Boot, Python, Java e iOS."
+          },
+          {
+            "developer_id": "Dev_367",
+            "reason": "Cobre Mobile, AWS, JavaScript, Cloud, Node.js, Spring Boot, Java, IoT, Android, iOS e Swift."
+          },
+          {
+            "developer_id": "Dev_397",
+            "reason": "Reforça Mobile, AWS, TypeScript, Cloud, Java, Android, iOS e Kotlin."
+          },
+          {
+            "developer_id": "Dev_351",
+            "reason": "Cobre IA, React Native, JavaScript, Python, Java, Android e iOS."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: Mobile, artificial intelligence, React Native, AWS, TypeScript e JavaScript.",
+        "should_could_summary": "SHOULD cobertos: Cloud, Node.js, Spring Boot, Python e Java. COULD cobertos: IoT, Android, iOS, Kotlin e Swift.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo, mas a evidência é moderada quando comparada a outras equipes; ainda assim, não há par totalmente isolado.",
+        "main_limitation": "React Native fica concentrado em Dev_351; a colaboração existe, mas é menos forte que em outros projetos, então a integração da equipe deve ser acompanhada."
+      },
+      {
+        "project_id": "P12",
+        "project_name": "Plataforma IoT Industrial com Integração Web",
+        "team_size": 4,
+        "recommended_team": [
+          {
+            "developer_id": "Dev_202",
+            "reason": "Cobre Web, MQTT, Node-RED, Java, Cloud, Angular, Spring Boot, TypeScript, REST API e Docker."
+          },
+          {
+            "developer_id": "Dev_370",
+            "reason": "Cobre IoT, Web, MQTT, Java, Cloud, Angular, Spring Boot, REST API, Docker e SQL."
+          },
+          {
+            "developer_id": "Dev_398",
+            "reason": "Cobre IoT, Node-RED, Java, Cloud, Angular, Spring Boot, Python, IA, REST API, Docker e SQL."
+          },
+          {
+            "developer_id": "Dev_81",
+            "reason": "Reforça Web, Node-RED, Java, Cloud, Angular, Spring Boot, TypeScript, REST API, Docker e SQL."
+          }
+        ],
+        "must_coverage_summary": "Cobertura completa dos MUST: IoT, Web, MQTT, Node-RED e Java.",
+        "should_could_summary": "SHOULD cobertos: Cloud, Angular, Spring Boot, TypeScript e Python. COULD cobertos: artificial intelligence, REST API, Docker e SQL.",
+        "collaboration_summary": "Todos os seis pares possuem colaboração no grafo; há evidência forte entre Dev_370 e Dev_398, Dev_370 e Dev_81, além de boas ligações envolvendo Dev_202.",
+        "main_limitation": "A equipe cobre bem os requisitos, mas MQTT e Node-RED ficam distribuídos em poucos membros; convém evitar que a integração industrial dependa de uma única pessoa."
+      }
+    ]
+  }
+}
